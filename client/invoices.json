@@ -1,0 +1,2480 @@
+[{
+  "_id": {
+    "$oid": "61dc54ba099d6e0bda28712b"
+  },
+  "invoiceNumber": 1,
+  "kotNumber": 1,
+  "table": 1,
+  "cname": "",
+  "phone": null,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:10",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1728f18774bf40c550e3a"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:39.320Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc54c3099d6e0bda2871df"
+  },
+  "invoiceNumber": 2,
+  "kotNumber": 2,
+  "table": 2,
+  "cname": "",
+  "phone": null,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:10",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 480,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1728f18774bf40c550e3e"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:39.836Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc54ce099d6e0bda287310"
+  },
+  "invoiceNumber": 3,
+  "kotNumber": 3,
+  "table": 3,
+  "cname": "",
+  "phone": null,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:10",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 700,
+  "orderList": [
+    {
+      "item": "Dal Makhani with 2 Naan",
+      "price": 165,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729018774bf40c550e44"
+      }
+    },
+    {
+      "item": "Royal Madrasi Special Thali",
+      "price": 150,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729018774bf40c550e45"
+      }
+    },
+    {
+      "item": "Veg Chowmein with Manchurian",
+      "price": 220,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729018774bf40c550e46"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:40.340Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc54d7099d6e0bda2873d2"
+  },
+  "invoiceNumber": 4,
+  "kotNumber": 4,
+  "table": 4,
+  "cname": "",
+  "phone": null,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:10",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 520,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Garlic Toast",
+      "price": 130,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729018774bf40c550e4a"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:40.836Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc55431c0e10d2d8259e3e"
+  },
+  "invoiceNumber": 5,
+  "kotNumber": 5,
+  "table": 12,
+  "cname": "govind",
+  "phone": null,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:17",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 553,
+  "orderList": [
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729118774bf40c550e4f"
+      }
+    },
+    {
+      "item": "Veg.hawaiian Pizza",
+      "price": 171,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729118774bf40c550e50"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:41.335Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc55bc57f419cd78f24862"
+  },
+  "invoiceNumber": 6,
+  "kotNumber": 6,
+  "table": 7,
+  "cname": "rr",
+  "phone": 1,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 320,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729118774bf40c550e55"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729118774bf40c550e56"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:41.834Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc567957f419cd78f254d6"
+  },
+  "invoiceNumber": 7,
+  "kotNumber": 7,
+  "table": 8,
+  "cname": "hi",
+  "phone": 1,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 120,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729218774bf40c550e5a"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:42.329Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc56ce57f419cd78f25ad9"
+  },
+  "invoiceNumber": 8,
+  "kotNumber": 8,
+  "table": 7,
+  "cname": "w",
+  "phone": 23,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729218774bf40c550e5e"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:42.826Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc577957f419cd78f267db"
+  },
+  "invoiceNumber": 9,
+  "kotNumber": 9,
+  "table": 8,
+  "cname": "hii",
+  "phone": 8,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 831,
+  "orderList": [
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729318774bf40c550e64"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729318774bf40c550e65"
+      }
+    },
+    {
+      "item": "Chilly Cheese Garlic Toast",
+      "price": 130,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729318774bf40c550e66"
+      }
+    }
+  ],
+  "__v": 3,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:43.324Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc592857f419cd78f289dd"
+  },
+  "invoiceNumber": 10,
+  "kotNumber": 10,
+  "table": 9,
+  "cname": "w",
+  "phone": 12,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 120,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729318774bf40c550e6a"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:43.818Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc59a057f419cd78f293b4"
+  },
+  "invoiceNumber": 11,
+  "kotNumber": 11,
+  "table": 45,
+  "cname": "we",
+  "phone": 8949402995,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 1,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 555,
+  "orderList": [
+    {
+      "item": "Chilli Panner",
+      "price": 185,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e1729418774bf40c550e6e"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:44.311Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc5a4e57f419cd78f2a26c"
+  },
+  "invoiceNumber": 12,
+  "kotNumber": 12,
+  "table": 5,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 155,
+  "orderList": [
+    {
+      "item": "Manchurian Dry",
+      "price": 155,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729418774bf40c550e72"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:44.805Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc5ab757f419cd78f2abc9"
+  },
+  "invoiceNumber": 13,
+  "kotNumber": 13,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:19",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729518774bf40c550e76"
+      }
+    }
+  ],
+  "__v": 1,
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:45.301Z"
+  }
+},{
+  "_id": {
+    "$oid": "61dc5dc0384e4eb594216453"
+  },
+  "invoiceNumber": 14,
+  "kotNumber": 14,
+  "table": 7,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:53",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 640,
+  "orderList": [
+    {
+      "item": "Red Sauce Pasta",
+      "price": 160,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729518774bf40c550e7a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T16:24:32.308Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:45.797Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "61dc5dc5384e4eb594216533"
+  },
+  "invoiceNumber": 15,
+  "kotNumber": 15,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:53",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 320,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729618774bf40c550e7e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T16:24:37.932Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:46.292Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dc601e8fea16e0cdf021fa"
+  },
+  "invoiceNumber": 16,
+  "kotNumber": 16,
+  "table": 6,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "16:31",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Mango Juice",
+      "price": 40,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729618774bf40c550e82"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T16:34:38.286Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:46.791Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dc6e529790d1b02b8452e4"
+  },
+  "invoiceNumber": 17,
+  "kotNumber": 17,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "22:58",
+  "day": 1,
+  "date": 10,
+  "month": 0,
+  "year": 2022,
+  "total": 405,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e88"
+      }
+    },
+    {
+      "item": "Dal Makhani with 2 Naan",
+      "price": 165,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e89"
+      }
+    },
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e8a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T17:35:14.174Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:47.287Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "61dc8de78a2ccdb5c08fce04"
+  },
+  "invoiceNumber": 18,
+  "kotNumber": 1,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "0:53",
+  "day": 2,
+  "date": 5,
+  "month": 0,
+  "year": 2022,
+  "total": 3061,
+  "orderList": [
+    {
+      "item": "Chilli Panner",
+      "price": 185,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e9b"
+      }
+    },
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e9c"
+      }
+    },
+    {
+      "item": "Dal Makhani with 2 Naan",
+      "price": 165,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e9d"
+      }
+    },
+    {
+      "item": "Dragon Potato",
+      "price": 185,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e9e"
+      }
+    },
+    {
+      "item": "Farm Villa Pizza",
+      "price": 185,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550e9f"
+      }
+    },
+    {
+      "item": "Fried Rice",
+      "price": 150,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea0"
+      }
+    },
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea1"
+      }
+    },
+    {
+      "item": "Mac Special Pizza",
+      "price": 183,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea2"
+      }
+    },
+    {
+      "item": "Maharaja Mac™ Meal",
+      "price": 511,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea3"
+      }
+    },
+    {
+      "item": "Manchurian Dry",
+      "price": 155,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea4"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea5"
+      }
+    },
+    {
+      "item": "Red Sauce Pasta",
+      "price": 160,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea6"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea7"
+      }
+    },
+    {
+      "item": "White Cheese Sauce Pasta",
+      "price": 160,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729718774bf40c550ea8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T19:49:59.949Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:47.797Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dca3fdd7e2b1ea78cedc98"
+  },
+  "invoiceNumber": 22,
+  "kotNumber": 2,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "2:50",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2021,
+  "total": 382,
+  "orderList": [
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729818774bf40c550eac"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T21:24:13.340Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:48.294Z"
+  },
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "61dcb33f902e6b1ca1f9860b"
+  },
+  "invoiceNumber": 23,
+  "kotNumber": 3,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "3:21",
+  "day": 2,
+  "date": 11,
+  "month": 11,
+  "year": 2021,
+  "total": 120,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729818774bf40c550eb0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-10T22:29:19.110Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:48.790Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "61dccb94d753e7c5cd6ac2c0"
+  },
+  "invoiceNumber": 24,
+  "kotNumber": 4,
+  "table": 5,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:2",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2022,
+  "total": 800,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729918774bf40c550eb5"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729918774bf40c550eb6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T00:13:08.462Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:49.285Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "61dccc740551ac669fd56c0d"
+  },
+  "invoiceNumber": 25,
+  "kotNumber": 5,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:46:52",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729918774bf40c550eba"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T00:16:52.099Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:49.776Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dccd4be18cee42bdecbc65"
+  },
+  "invoiceNumber": 26,
+  "kotNumber": 6,
+  "table": 4,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:50:27",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2022,
+  "total": 191,
+  "orderList": [
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729a18774bf40c550ebe"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T00:20:27.232Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:50.268Z"
+  },
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "61dd664300604f94ff212e5c"
+  },
+  "invoiceNumber": 27,
+  "kotNumber": 7,
+  "table": 4,
+  "cname": "govind",
+  "phone": 8949402995,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 1,
+  "time": "16:43:7",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2022,
+  "total": 320,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729a18774bf40c550ec4"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729a18774bf40c550ec5"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729a18774bf40c550ec6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T11:13:07.652Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:50.764Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dd694700604f94ff21eec3"
+  },
+  "invoiceNumber": 28,
+  "kotNumber": 8,
+  "table": 3,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "16:55:59",
+  "day": 2,
+  "date": 11,
+  "month": 0,
+  "year": 2022,
+  "total": 160,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729b18774bf40c550eca"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T11:25:59.613Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:51.265Z"
+  },
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "61ddce854e56c6c4e7614b8e"
+  },
+  "invoiceNumber": 29,
+  "kotNumber": 1,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "0:7:57",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729b18774bf40c550ecf"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729b18774bf40c550ed0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T18:37:57.114Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:51.759Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61ddce8a4e56c6c4e7614df7"
+  },
+  "invoiceNumber": 30,
+  "kotNumber": 2,
+  "table": 4,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "0:8:2",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729c18774bf40c550ed5"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729c18774bf40c550ed6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-11T18:38:02.803Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:52.252Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dee40680da00927bf067d2"
+  },
+  "invoiceNumber": 31,
+  "kotNumber": 3,
+  "table": 6,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "19:51:58",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 160,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729c18774bf40c550eda"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T14:21:58.857Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:52.747Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61def38f80da00927bf24ba5"
+  },
+  "invoiceNumber": 32,
+  "kotNumber": 4,
+  "table": 4,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "20:58:15",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 1770,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 5,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550ee2"
+      }
+    },
+    {
+      "item": "Choco Brownie Shake",
+      "price": 140,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550ee3"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 5,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550ee4"
+      }
+    },
+    {
+      "item": "Pomegranate Juice",
+      "price": 50,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550ee5"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550ee6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T15:28:15.854Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:53.255Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61defcee80da00927bf35d1c"
+  },
+  "invoiceNumber": 33,
+  "kotNumber": 5,
+  "table": 5,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:38:14",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 1502,
+  "orderList": [
+    {
+      "item": "Maharaja Mac™ Meal",
+      "price": 511,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550eeb"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729d18774bf40c550eec"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T16:08:14.504Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:53.790Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61defd5180da00927bf364dd"
+  },
+  "invoiceNumber": 34,
+  "kotNumber": 6,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:39:53",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 690,
+  "orderList": [
+    {
+      "item": "Cheese Sandwich",
+      "price": 60,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729e18774bf40c550ef2"
+      }
+    },
+    {
+      "item": "Chilly Cheese Garlic Toast",
+      "price": 130,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e1729e18774bf40c550ef3"
+      }
+    },
+    {
+      "item": "Vegetable Sandwich",
+      "price": 50,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729e18774bf40c550ef4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T16:09:53.138Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:54.319Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61defda980da00927bf36e82"
+  },
+  "invoiceNumber": 35,
+  "kotNumber": 7,
+  "table": 7,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:41:21",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729e18774bf40c550ef8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T16:11:21.193Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:54.883Z"
+  },
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "61df031e80da00927bf420a9"
+  },
+  "invoiceNumber": 36,
+  "kotNumber": 8,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "22:4:38",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e1729f18774bf40c550efc"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T16:34:38.485Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:55.389Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df0ead61c508406fd4480d"
+  },
+  "invoiceNumber": 37,
+  "kotNumber": 9,
+  "table": 3,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "17:23:57",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 440,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e1729f18774bf40c550f01"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e1729f18774bf40c550f02"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T17:23:57.244Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:55.885Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df102cab916834c0fef830"
+  },
+  "invoiceNumber": 38,
+  "kotNumber": 10,
+  "table": 4,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "17:30:20",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 600,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 5,
+      "_id": {
+        "$oid": "61e172a018774bf40c550f06"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T17:30:20.702Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:56.377Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df10ceab916834c0ff3dd6"
+  },
+  "invoiceNumber": 39,
+  "kotNumber": 11,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "17:33:2",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 120,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a018774bf40c550f0a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T17:33:02.442Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:56.905Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df12572ab22fb951e6a4d1"
+  },
+  "invoiceNumber": 40,
+  "kotNumber": 12,
+  "table": 7,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "17:39:35",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a118774bf40c550f0e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T17:39:35.897Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:57.446Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df129c2ab22fb951e6c084"
+  },
+  "invoiceNumber": 41,
+  "kotNumber": 13,
+  "table": 88,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "17:40:44",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 440,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a118774bf40c550f13"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e172a118774bf40c550f14"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T17:40:44.953Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:57.938Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df18752ab22fb951e951d6"
+  },
+  "invoiceNumber": 42,
+  "kotNumber": 14,
+  "table": 5,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "18:5:41",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 120,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a218774bf40c550f18"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T18:05:41.160Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:58.430Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df18e91ed3f7505cd0aa32"
+  },
+  "invoiceNumber": 43,
+  "kotNumber": 15,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "23:37:37",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 400,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 5,
+      "_id": {
+        "$oid": "61e172a218774bf40c550f1c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T18:07:37.794Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:58.920Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df1b8a1ed3f7505cd24dba"
+  },
+  "invoiceNumber": 44,
+  "kotNumber": 16,
+  "table": 32,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "23:48:50",
+  "day": 3,
+  "date": 12,
+  "month": 0,
+  "year": 2022,
+  "total": 840,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 6,
+      "_id": {
+        "$oid": "61e172a318774bf40c550f21"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a318774bf40c550f22"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T18:18:50.810Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:59.448Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df2da9a29c80e67faa359e"
+  },
+  "invoiceNumber": 45,
+  "kotNumber": 1,
+  "table": 7,
+  "cname": "hi",
+  "phone": 1,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "1:6:9",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 250,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Garlic Toast",
+      "price": 130,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a318774bf40c550f27"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a318774bf40c550f28"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T19:36:09.525Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:54:59.941Z"
+  },
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "61df350aa29c80e67fabea15"
+  },
+  "invoiceNumber": 46,
+  "kotNumber": 2,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "1:37:38",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e172a418774bf40c550f2c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T20:07:38.039Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:00.435Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df44b96e8003ec8a43938e"
+  },
+  "invoiceNumber": 47,
+  "kotNumber": 3,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "2:44:33",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 1320,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 5,
+      "_id": {
+        "$oid": "61e172a418774bf40c550f31"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 6,
+      "_id": {
+        "$oid": "61e172a418774bf40c550f32"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T21:14:33.961Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:00.928Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61df45506e8003ec8a445a09"
+  },
+  "invoiceNumber": 48,
+  "kotNumber": 4,
+  "table": 4,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "2:47:4",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 460,
+  "orderList": [
+    {
+      "item": "Blue Lagoon Mocktail",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f39"
+      }
+    },
+    {
+      "item": "Choco Brownie Shake",
+      "price": 140,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f3a"
+      }
+    },
+    {
+      "item": "Orange Juice",
+      "price": 40,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f3b"
+      }
+    },
+    {
+      "item": "Oreo Shake",
+      "price": 100,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f3c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-12T21:17:04.493Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:01.426Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dfda81bf5bcc8fd3743e0c"
+  },
+  "invoiceNumber": 49,
+  "kotNumber": 5,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "13:23:37",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 920,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f42"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f43"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a518774bf40c550f44"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T07:53:37.089Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:01.922Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dfdc5fbf5bcc8fd37647fe"
+  },
+  "invoiceNumber": 50,
+  "kotNumber": 6,
+  "table": 1,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "13:31:35",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e172a618774bf40c550f48"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T08:01:35.452Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:02.411Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dfe12ba4527e85f02a092b"
+  },
+  "invoiceNumber": 51,
+  "kotNumber": 7,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "13:52:3",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 1200,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e172a618774bf40c550f4e"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 6,
+      "_id": {
+        "$oid": "61e172a618774bf40c550f4f"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e172a618774bf40c550f50"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T08:22:03.265Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:02.904Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61dfee19a4527e85f02cdb3a"
+  },
+  "invoiceNumber": 52,
+  "kotNumber": 8,
+  "table": 3,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "14:47:13",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 360,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Garlic Toast",
+      "price": 130,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e172a718774bf40c550f55"
+      }
+    },
+    {
+      "item": "Vegetable Sandwich",
+      "price": 50,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e172a718774bf40c550f56"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T09:17:14.004Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T12:55:03.395Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61e02d514315f0367492a5f8"
+  },
+  "invoiceNumber": 53,
+  "kotNumber": 9,
+  "table": 9,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "19:16:57",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 340,
+  "orderList": [
+    {
+      "item": "Choco Brownie Shake",
+      "price": 140,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e02d514315f0367492a5f9"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e02d514315f0367492a5fa"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e02d514315f0367492a5fb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T13:46:57.305Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-13T13:46:57.305Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e04e33eedc147a62e24fed"
+  },
+  "invoiceNumber": 54,
+  "kotNumber": 10,
+  "table": 7,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "21:37:15",
+  "day": 4,
+  "date": 13,
+  "month": 0,
+  "year": 2022,
+  "total": 1371,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e04e33eedc147a62e24fee"
+      }
+    },
+    {
+      "item": "Hot Passion Pizza",
+      "price": 191,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e04e33eedc147a62e24fef"
+      }
+    },
+    {
+      "item": "Mac Special Pizza",
+      "price": 183,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e04e33eedc147a62e24ff0"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e04e33eedc147a62e24ff1"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T16:07:15.915Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-13T16:07:15.915Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0b813706a1ca056b6fb72"
+  },
+  "invoiceNumber": 55,
+  "kotNumber": 1,
+  "table": 3,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:8:59",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 1660,
+  "orderList": [
+    {
+      "item": "Dosa",
+      "price": 90,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0b813706a1ca056b6fb73"
+      }
+    },
+    {
+      "item": "Fried Idli",
+      "price": 90,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0b813706a1ca056b6fb74"
+      }
+    },
+    {
+      "item": "Idli Sambhar",
+      "price": 80,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e0b813706a1ca056b6fb75"
+      }
+    },
+    {
+      "item": "Red Sauce Pasta",
+      "price": 160,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0b813706a1ca056b6fb76"
+      }
+    },
+    {
+      "item": "White Cheese Sauce Pasta",
+      "price": 160,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e0b813706a1ca056b6fb77"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T23:38:59.089Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-13T23:38:59.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0b920706a1ca056b8c188"
+  },
+  "invoiceNumber": 56,
+  "kotNumber": 2,
+  "table": 8,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:13:28",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 800,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e0b920706a1ca056b8c189"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0b920706a1ca056b8c18a"
+      }
+    },
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 4,
+      "_id": {
+        "$oid": "61e0b920706a1ca056b8c18b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T23:43:28.530Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-13T23:43:28.530Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0bc53706a1ca056be4b0f"
+  },
+  "invoiceNumber": 57,
+  "kotNumber": 3,
+  "table": 9,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "5:27:7",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 360,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0bc53706a1ca056be4b10"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-13T23:57:07.486Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-13T23:57:07.486Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0daa268f23beec686bc4b"
+  },
+  "invoiceNumber": 58,
+  "kotNumber": 4,
+  "table": 2,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "7:36:26",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Chilly Cheese Patty Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e0daa268f23beec686bc4c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-14T02:06:26.295Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T02:06:26.295Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0dac068f23beec686eb78"
+  },
+  "invoiceNumber": 59,
+  "kotNumber": 5,
+  "table": 3,
+  "cname": "",
+  "phone": 0,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "7:36:56",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 240,
+  "orderList": [
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e0dac068f23beec686eb79"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-14T02:06:56.810Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T02:06:56.810Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0f5363fb8a74c0e1de7b8"
+  },
+  "invoiceNumber": 60,
+  "kotNumber": 6,
+  "table": 7,
+  "cname": "govind",
+  "phone": 8545657535,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 0,
+  "time": "9:29:50",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 2430,
+  "orderList": [
+    {
+      "item": "Cheese Lasagane",
+      "price": 190,
+      "quantity": 6,
+      "_id": {
+        "$oid": "61e0f5363fb8a74c0e1de7b9"
+      }
+    },
+    {
+      "item": "Choco Brownie Shake",
+      "price": 140,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e0f5363fb8a74c0e1de7ba"
+      }
+    },
+    {
+      "item": "Oreo Shake",
+      "price": 100,
+      "quantity": 2,
+      "_id": {
+        "$oid": "61e0f5363fb8a74c0e1de7bb"
+      }
+    },
+    {
+      "item": "Panner Burger",
+      "price": 120,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0f5363fb8a74c0e1de7bc"
+      }
+    },
+    {
+      "item": "Royal Madrasi Special Thali",
+      "price": 150,
+      "quantity": 3,
+      "_id": {
+        "$oid": "61e0f5363fb8a74c0e1de7bd"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-14T03:59:50.058Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T03:59:50.058Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e0f5b13fb8a74c0e1e6326"
+  },
+  "invoiceNumber": 61,
+  "kotNumber": 7,
+  "table": 3,
+  "cname": "govind",
+  "phone": 7585956545,
+  "cgst": 2.5,
+  "sgst": 2.5,
+  "discount": 10,
+  "time": "9:31:53",
+  "day": 5,
+  "date": 14,
+  "month": 0,
+  "year": 2022,
+  "total": 80,
+  "orderList": [
+    {
+      "item": "Vegetable Burger",
+      "price": 80,
+      "quantity": 1,
+      "_id": {
+        "$oid": "61e0f5b13fb8a74c0e1e6328"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-14T04:01:53.915Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-14T04:05:15.941Z"
+  },
+  "__v": 4
+}]
