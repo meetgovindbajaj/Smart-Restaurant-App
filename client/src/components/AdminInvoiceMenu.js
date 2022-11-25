@@ -24,7 +24,7 @@ const AdminInvoiceMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`/AdminInvoiceAdd`, {
+      const res = await fetch(`//* link */`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
