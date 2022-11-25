@@ -22,7 +22,7 @@ const AdminTodaySpecialEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminTodaySpecialEdit", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const AdminTodaySpecialEdit = (title) => {
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
-      history.push("/AdminRegister");
+      history.push("//* link */");
       console.log(err);
     }
   };
@@ -74,7 +74,7 @@ const AdminTodaySpecialEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/AdminTodaySpecialEdit/Delete`, {
+      const res = await fetch(`//* link */`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
