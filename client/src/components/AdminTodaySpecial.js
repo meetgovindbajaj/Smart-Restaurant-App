@@ -29,7 +29,7 @@ const AdminTodaySpecial = () => {
   });
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Admingetdata", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const AdminTodaySpecial = () => {
     e.preventDefault();
     // eslint-disable-next-line
     const { title, price, quantity, img, description, category } = userData;
-    const res = await fetch("/Admintodayspecial", {
+    const res = await fetch("//* link */", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
