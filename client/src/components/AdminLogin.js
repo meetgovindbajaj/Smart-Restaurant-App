@@ -35,7 +35,7 @@ const AdminLogin = () => {
       },
     });
     if (cTable) {
-      const res = await fetch("/Adminlogin", {
+      const res = await fetch("//* link */", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +66,7 @@ const AdminLogin = () => {
       <NavLink
         className="menu-back"
         to={{
-          pathname: "/menu",
+          pathname: "//* link */",
           state: { loader: true },
         }}
       >
