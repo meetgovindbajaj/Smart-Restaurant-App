@@ -14,7 +14,7 @@ const Info = require("../model/infoSchema");
 const Invoice = require("../model/invoiceSchema");
 let count = 0;
 //USER ROUTERS-----------------------------------------------------//
-router.post(`/Register`, async (req, res) => {
+router.post(/* link */, async (req, res) => {
   const { table, name, phone } = req.body;
   if (!table) {
     return res
@@ -56,7 +56,7 @@ router.post(`/Register`, async (req, res) => {
   //   console.log(err);
   // }
 });
-router.post(`/Register1`, async (req, res) => {
+router.post(/* link */, async (req, res) => {
   const { table, name, phone } = req.body;
   if (!table) {
     return res
@@ -84,13 +84,13 @@ router.post(`/Register1`, async (req, res) => {
     .status(201)
     .json({ status: 201, message: "user registered successfully" });
 });
-router.get(`/Home`, authenticate, async (req, res) => {
+router.get(/* link */, authenticate, async (req, res) => {
   return res.send(req.rootUser);
 });
-router.get("/getdata", authenticate, async (req, res) => {
+router.get(/* link */, authenticate, async (req, res) => {
   return res.send(req.rootUser);
 });
-router.post(`/Home/Menu`, authenticate, async (req, res) => {
+router.post(/* link */, authenticate, async (req, res) => {
   try {
     const { title, price, img, quantity } = req.body;
     const userExist = await User.findOne({ _id: req.userID });
@@ -118,10 +118,10 @@ router.post(`/Home/Menu`, authenticate, async (req, res) => {
   }
 });
 router
-  .get("/Home/Cart", authenticate, async (req, res) => {
+  .get(/* link */, authenticate, async (req, res) => {
     return res.send(req.rootUser);
   })
-  .post(`/Home/Cart`, authenticate, async (req, res) => {
+  .post(/* link */, authenticate, async (req, res) => {
     try {
       const { items } = req.body;
       const userExist = await User.findOne({ _id: req.userID });
@@ -154,7 +154,7 @@ router
       res.send("error adding to cart");
     }
   })
-  .post(`/Home/Cart/Delete`, authenticate, async (req, res) => {
+  .post(/* link */, authenticate, async (req, res) => {
     const { title, price } = req.body;
     const userExist = await User.updateOne(
       { _id: req.userID },
@@ -168,7 +168,7 @@ router
         .json({ status: 400, error: "Some Error Occured!" });
     }
   })
-  .post(`/Home/Cart/Add`, authenticate, async (req, res) => {
+  .post(/* link */, authenticate, async (req, res) => {
     try {
       const { title, price, quantity } = req.body;
       const userExist = await User.findOne({
@@ -195,7 +195,7 @@ router
       console.log(err);
     }
   })
-  .post(`/Home/Cart/Sub`, authenticate, async (req, res) => {
+  .post(/* link */, authenticate, async (req, res) => {
     try {
       const { title, price, quantity } = req.body;
       const userExist = await User.findOne({
@@ -222,10 +222,10 @@ router
       console.log(err);
     }
   });
-router.get("/Home/Invoice", authenticate, async (req, res) => {
+router.get(/* link */, authenticate, async (req, res) => {
   return res.send(req.rootUser);
 });
-router.get("/Message", async (req, res) => {
+router.get(/* link */, async (req, res) => {
   try {
     let data = await Message.find();
     return res.json(data);
@@ -233,7 +233,7 @@ router.get("/Message", async (req, res) => {
     console.log(err);
   }
 });
-router.post("/Message", authenticate, async (req, res) => {
+router.post(/* link */, authenticate, async (req, res) => {
   try {
     const { table, message } = req.body;
     const userExist = await User.findOne({ _id: req.userID });
@@ -258,7 +258,7 @@ router.post("/Message", authenticate, async (req, res) => {
     console.log(err);
   }
 });
-router.post("/message/delete", authenticate1, async (req, res) => {
+router.post(/* link */, authenticate1, async (req, res) => {
   const { table, message } = req.body;
   const userExist = await Message.deleteOne({ table, message });
   if (userExist) {
@@ -267,7 +267,7 @@ router.post("/message/delete", authenticate1, async (req, res) => {
     return res.status(422).json({ status: 400, error: "Some Error Occured!" });
   }
 });
-router.get("/Delete", async (req, res) => {
+router.get(/* link */, async (req, res) => {
   try {
     const userExist = await Message.deleteMany({});
     if (userExist) {
@@ -283,7 +283,7 @@ router.get("/Delete", async (req, res) => {
 });
 
 //ADMIN ROUTERS----------------------------------------------------//
-router.post(`/AdminRegister`, async (req, res) => {
+router.post(/* link */, async (req, res) => {
   const { name, email, phone, password, cpassword } = req.body;
   if (!name || !email || !phone || !password || !cpassword) {
     return res
@@ -315,7 +315,7 @@ router.post(`/AdminRegister`, async (req, res) => {
     console.log(err);
   }
 });
-router.post("/Adminlogin", async (req, res) => {
+router.post("//* link */", async (req, res) => {
   let token;
   const { email, password, key } = req.body;
   if (!email || !password || !key) {
@@ -329,7 +329,7 @@ router.post("/Adminlogin", async (req, res) => {
       return res
         .status(422)
         .json({ status: 400, error: "invalid credentails" });
-    } else if (Number(key) !== Number(2597)) {
+    } else if (/* link */) {
       return res
         .status(422)
         .json({ status: 400, error: "invalid credentails" });
@@ -354,26 +354,26 @@ router.post("/Adminlogin", async (req, res) => {
     console.log(err);
   }
 });
-router.get("/Adminlogout", authenticate1, async (req, res) => {
-  res.clearCookie("jwtoken", { path: "/admindashboard" });
+router.get("//* link */", authenticate1, async (req, res) => {
+  res.clearCookie("jwtoken", { path: "/* link */" });
   await Admin.updateOne({ _id: req.adminID }, { $pull: { tokens: {} } });
   return res.status(200).send("Logout Successful");
 });
-router.get("/Admingetdata", authenticate1, async (req, res) => {
+router.get("//* link */", authenticate1, async (req, res) => {
   return res.send(req.rootAdmin);
 });
-router.get("/Admininfo", authenticate1, async (req, res) => {
+router.get("//* link */", authenticate1, async (req, res) => {
   const data = await Admin.find();
   return res.send(data);
 });
-router.post("/AdminInfoDel", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   const { email, code } = req.body;
   const data = req.rootAdmin;
   if (data.email === email) {
     return res.status(400).send({ status: 400 });
-  } else if (email === "admin@gmail.com" && code !== 259700) {
+  } else if (/* link */) {
     return res.status(401).send({ status: 401 });
-  } else if (email !== "admin@gmail.com" && code !== 2597) {
+  } else if (/* link */) {
     return res.status(401).send({ status: 401 });
   }
   const del = await Admin.findOneAndDelete({ email });
@@ -381,16 +381,16 @@ router.post("/AdminInfoDel", authenticate1, async (req, res) => {
     return res.status(200).send({ status: 200 });
   }
 });
-router.get("/Menu", authenticate2, async (req, res) => {
+router.get("//* link */", authenticate2, async (req, res) => {
   return res.send(req.rootMenu);
 });
-router.get("/TodaySpecial", authenticate2, async (req, res) => {
+router.get("//* link */", authenticate2, async (req, res) => {
   return res.send(req.rootTodaySpecial);
 });
-router.get("/adminMenuspecial", authenticate2, async (req, res) => {
+router.get("//* link */", authenticate2, async (req, res) => {
   return res.send([req.rootMenu, req.rootTodaySpecial]);
 });
-router.post("/Adminhome", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { title, price, quantity, img, description, category } = req.body;
     const userContact = await Admin.findOne({ _id: req.adminID });
@@ -416,7 +416,7 @@ router.post("/Adminhome", authenticate1, async (req, res) => {
     console.log(err);
   }
 });
-router.post("/Admintodayspecial", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { title, price, quantity, img, description, category } = req.body;
     const userContact = await Admin.findOne({ _id: req.adminID });
@@ -443,7 +443,7 @@ router.post("/Admintodayspecial", authenticate1, async (req, res) => {
   }
 });
 router
-  .get("/AdminUserAccess", authenticate1, async (req, res) => {
+  .get("//* link */", authenticate1, async (req, res) => {
     try {
       const data = await User.find();
       return res.send(data);
@@ -451,7 +451,7 @@ router
       console.log(err);
     }
   })
-  .post("/AdminUserAccess", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const { table, items, total, discount, name, phone } = req.body;
       if (items.items.length === 0) {
@@ -539,7 +539,7 @@ router
       console.log(err);
     }
   });
-router.post("/delItem", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { table, title, price, quantity } = req.body;
     // console.log(table, title, price, quantity);
@@ -576,7 +576,7 @@ router.post("/delItem", authenticate1, async (req, res) => {
     console.log(e);
   }
 });
-router.post("/addItem", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { table, title, price, quantity } = req.body;
     // console.log(table, title, price, quantity);
@@ -621,7 +621,7 @@ router.post("/addItem", authenticate1, async (req, res) => {
     console.log(e);
   }
 });
-router.post("/deleteItem", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { table, title, price, quantity } = req.body;
     const userExist = await User.updateOne(
@@ -648,7 +648,7 @@ router.post("/deleteItem", authenticate1, async (req, res) => {
     console.log(e);
   }
 });
-router.post("/swap", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { table, newTable } = req.body;
     const userExist = await User.updateMany({ table }, { table: newTable });
@@ -663,7 +663,7 @@ router.post("/swap", authenticate1, async (req, res) => {
     console.log(e);
   }
 });
-router.post("/AdminUserItemAdd", authenticate1, async (req, res) => {
+router.post("//* link */", authenticate1, async (req, res) => {
   try {
     const { table, items } = req.body;
     const userExist = await User.findOne({ table });
@@ -687,10 +687,10 @@ router.post("/AdminUserItemAdd", authenticate1, async (req, res) => {
   }
 });
 router
-  .get("/AdminMenuEdit", authenticate2, async (req, res) => {
+  .get("//* link */", authenticate2, async (req, res) => {
     return res.send(req.rootMenu);
   })
-  .post("/adminMenuEdit/Delete", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     const { title } = req.body;
     const userExist = await Menu.deleteOne({ title: title });
     if (userExist) {
@@ -702,10 +702,10 @@ router
     }
   });
 router
-  .get("/AdminTodaySpecialEdit", authenticate2, async (req, res) => {
+  .get("//* link */", authenticate2, async (req, res) => {
     return res.send(req.rootTodaySpecial);
   })
-  .post("/AdminTodaySpecialEdit/Delete", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     const { title } = req.body;
     const userExist = await TodaySpecial.deleteOne({ title: title });
     if (userExist) {
@@ -717,10 +717,10 @@ router
     }
   });
 router
-  .get("/restroInfo", authenticate1, async (req, res) => {
+  .get("//* link */", authenticate1, async (req, res) => {
     return res.send(req.rootInfo);
   })
-  .post("/restroInfoEdit", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const {
         title,
@@ -767,10 +767,10 @@ router
     }
   });
 router
-  .get("/invoiceInfo", authenticate1, authenticate2, async (req, res) => {
+  .get("//* link */", authenticate1, authenticate2, async (req, res) => {
     return res.send([req.rootInvoice,req.rootMenu,req.rootTodaySpecial]);
   })
-  .post("/invoiceInfo", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const { invoId } = req.body;
       const Exist = await Invoice.findOne({ invoiceNumber: invoId });
@@ -783,7 +783,7 @@ router
       console.log(e);
     }
   })
-  .post("/AdminInvoiceAdd", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const { invoice, items } = req.body;
       const invo = await Invoice.findOne({ invoiceNumber: invoice });
@@ -797,7 +797,7 @@ router
       console.log(e);
     }
   })
-  .post("/AdminInvoiceEdit", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const { invoice, item, quantity } = req.body;
       const Exist = await Invoice.findOne({ invoiceNumber: invoice });
@@ -813,7 +813,7 @@ router
       console.log(e);
     }
   })
-  .post("/AdminDiscount", authenticate1, async (req, res) => {
+  .post("//* link */", authenticate1, async (req, res) => {
     try {
       const { invoice, name, phone, discount } = req.body;
       const Exist = await Invoice.findOne({ invoiceNumber: invoice });
