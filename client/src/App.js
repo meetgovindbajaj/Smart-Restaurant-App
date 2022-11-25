@@ -33,137 +33,137 @@ const Routing = () => {
   return (
     <Switch>
       {/* outer today special */}
-      <Route path="/TodaySpecial">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="special" />
         <OuetrTodaySpecial />
       </Route>
       {/*outer menu */}
-      <Route path="/Menu">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="menu" />
         <OuterMenu />
       </Route>
       {/*admin register*/}
-      <Route path="/Adminregister">
+      <Route path="//* link */">
         <Navbar />
         <AdminRegister />
       </Route>
       {/* admin info */}
-      <Route path="/Admininfo">
+      <Route path="//* link */">
         <Navbar />
         <AdminInfo />
       </Route>
       {/*admin login*/}
-      <Route path="/Adminlogin">
+      <Route path="//* link */">
         <Navbar />
         <AdminLogin />
       </Route>
       {/*restro details*/}
-      <Route path="/restroInfo">
+      <Route path="//* link */">
         <Navbar />
         <RestaurantDetails />
       </Route>
       {/*admin dashboard*/}
-      <Route path="/Admindashboard">
+      <Route path="//* link */">
         <Navbar />
         <AdminDashboard />
       </Route>
       {/*admin tables*/}
-      <Route path="/AdminUserAccess">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="admintable" />
         <AdminUserAccess />
       </Route>
       {/*admin user data access*/}
-      <Route path="/AdminUserDataAccess">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="adminuserdataaccess" />
         <AdminUserDataAccess />
       </Route>
       {/*admin invoice edit*/}
-      <Route path="/AdminInvoiceEdit">
+      <Route path="//* link */">
         <Navbar />
         <AdminInvoiceEdit />
       </Route>
       {/*admin menu edit*/}
-      <Route path="/AdminMenuEdit">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="adminmenuedit" />
         <AdminMenuEdit />
       </Route>
       {/*admin todays special edit*/}
-      <Route path="/AdminTodaySpecialEdit">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="adminspecialedit" />
         <AdminTodaySpecialEdit />
       </Route>
       {/*admin add menu*/}
-      <Route path="/Adminhome">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="adminmenuadd" />
         <AdminHome />
       </Route>
       {/*admin add todays special*/}
-      <Route path="/Admintodayspecial">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="adminspecialadd" />
         <AdminTodaySpecial />
       </Route>
       {/*print page message*/}
-      <Route path="/printpage">
+      <Route path="//* link */">
         <PrintPage />
       </Route>
       {/*print page 1*/}
-      <Route path="/printpage1">
+      <Route path="//* link */">
         <PrintPage1 />
       </Route>
       {/*print page 2*/}
-      <Route path="/printpage2">
+      <Route path="//* link */">
         <PrintPage2 />
       </Route>
       {/*user register*/}
-      <Route path="/Register">
+      <Route path="//* link */">
         <Navbar />
         <Register />
       </Route>
       {/*user cart*/}
-      <Route path="/Home/Cart">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="cart" />
         <Cart />
       </Route>
       {/*user invoice*/}
-      <Route path="/Home/Invoice">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="invoice" />
         <Invoice />
       </Route>
       {/*user menu*/}
-      <Route path="/Home/Menu">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="homemenu" />
         <Menu />
       </Route>
       {/*user todays special*/}
-      <Route path="/Home/TodaySpecial">
+      <Route path="//* link */">
         <Navbar />
         <Navigation link="homespecial" />
         <TodaySpecial />
       </Route>
       {/*outer menu*/}
-      <Route exact path="/">
+      <Route exact path="/* link */">
         <Navbar />
         <Navigation link="menu" />
         <OuterMenu />
       </Route>
       {/*user home*/}
-      <Route path="/Home">
+      <Route path="/* link */">
         <Navbar />
         <Home />
       </Route>
       {/*error page*/}
-      <Route path="/">
+      <Route path="/* link */">
         <Navbar />
         <ErrorPage />
       </Route>
