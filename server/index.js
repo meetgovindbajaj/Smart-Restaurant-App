@@ -21,7 +21,7 @@ function time() {
   return a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
 }
 
-app.use(require("./routers/auth"));
+app.use(require(/* link */));
 
 app.listen(PORT, () => {
   console.log(
