@@ -23,7 +23,7 @@ const AdminMenuEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminMenuEdit", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const AdminMenuEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/AdminMenuEdit/Delete`, {
+      const res = await fetch(`//* link */`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
