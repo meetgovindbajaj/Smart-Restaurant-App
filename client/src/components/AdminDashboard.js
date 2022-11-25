@@ -24,7 +24,7 @@ const AdminDashboard = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Admingetdata", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const AdminDashboard = () => {
       const data = await res.json();
       setuserData(data);
       if (!res.status === 200) {
-        history.push("/Adminlogin");
+        history.push("//* link */");
         const error = new Error(res.error);
         throw error;
       } else {
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
-      history.push("/Adminlogin");
+      history.push("//* link */");
       console.log(err);
     }
   };
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
       });
       if (deleteFile) {
         // eslint-disable-next-line
-        const res = await fetch("/Adminlogout", {
+        const res = await fetch("//* link */", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
