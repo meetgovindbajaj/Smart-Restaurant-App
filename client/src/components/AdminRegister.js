@@ -23,7 +23,7 @@ const AdminRegister = () => {
   const PostData = async (e) => {
     e.preventDefault();
     const { name, email, phone, password, cpassword } = user;
-    const res = await fetch("/Adminregister", {
+    const res = await fetch("//* link */", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
