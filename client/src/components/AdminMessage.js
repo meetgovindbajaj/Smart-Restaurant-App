@@ -8,7 +8,7 @@ function AdminMessage() {
   });
   const userRequests = async () => {
     try {
-      const res = await fetch("/Message", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function AdminMessage() {
     }
   };
   const deleteItem = async (table, message) => {
-    const res = await fetch(`/Message/Delete`, {
+    const res = await fetch(`//* link */`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
