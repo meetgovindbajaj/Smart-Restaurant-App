@@ -34,7 +34,7 @@ const AdminInvoiceEdit = (props) => {
   const [userData, setUserData] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch(`/invoiceinfo`, {
+      const res = await fetch(`//* link */`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,7 +96,7 @@ const AdminInvoiceEdit = (props) => {
   }
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("/adminMenuspecial", {
+      const res1 = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
