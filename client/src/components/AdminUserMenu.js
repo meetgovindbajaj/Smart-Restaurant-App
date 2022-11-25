@@ -30,7 +30,7 @@ const AdminUserMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`/AdminUserItemAdd`, {
+      const res = await fetch(`//* link */`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
