@@ -32,7 +32,7 @@ const AdminHome = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Admingetdata", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const AdminHome = () => {
   };
   const getMenu = async () => {
     try {
-      const res = await fetch("/AdminMenuEdit", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -85,7 +85,7 @@ const AdminHome = () => {
   const contactForm = async (e) => {
     e.preventDefault();
     const { title, price, quantity, img, description, category } = userData;
-    const res = await fetch("/Adminhome", {
+    const res = await fetch("//* link */", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
