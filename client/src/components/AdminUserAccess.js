@@ -32,7 +32,7 @@ const AdminUserAccess = () => {
   const [todayData, setTodayData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminUserAccess", {
+      const res = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const AdminUserAccess = () => {
       setuserData(data);
       loader = false;
       if (!res.status === 200) {
-        history.push("/Adminlogin");
+        history.push("//* link */");
         const error = new Error(res.error);
         throw error;
       } else {
@@ -55,7 +55,7 @@ const AdminUserAccess = () => {
   callAboutPage();
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("/adminMenuspecial", {
+      const res1 = await fetch("//* link */", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
