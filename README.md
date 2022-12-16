@@ -1,4 +1,4 @@
-# [Smart-Restaurant-App](https://smart-restaurant-app.herokuapp.com/)
+# [Smart-Restaurant-App](https://royalmadrasi.vercel.app/)
 
 ### [Youtube Video](https://youtu.be/lx1wG5Tu6IE)
 
