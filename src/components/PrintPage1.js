@@ -22,7 +22,7 @@ const PrintPage1 = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/restroInfo", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/restroInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

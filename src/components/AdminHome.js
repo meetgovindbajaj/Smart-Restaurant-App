@@ -23,7 +23,7 @@ const AdminHome = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Admingetdata", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Admingetdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const AdminHome = () => {
   };
   const getMenu = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/AdminMenuEdit", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/AdminMenuEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ const AdminHome = () => {
   const contactForm = async (e) => {
     e.preventDefault();
     const { title, price, quantity, img, description, category } = userData;
-    const res = await fetch("https://royalmadrasiserver/Adminhome", {
+    const res = await fetch("https://royalmadrasiserver.vercel.app/Adminhome", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -24,7 +24,7 @@ const RestaurantDetails = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/restroInfo", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/restroInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -146,7 +146,7 @@ const RestaurantDetails = () => {
           }
         }
 
-        const res = await fetch(`/restroInfoEdit`, {
+        const res = await fetch(`https://royalmadrasiserver.vercel.app/restroInfoEdit`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

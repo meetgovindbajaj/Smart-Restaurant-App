@@ -31,7 +31,7 @@ const AdminUserMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`/AdminUserItemAdd`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminUserItemAdd`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

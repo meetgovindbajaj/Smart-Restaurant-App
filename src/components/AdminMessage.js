@@ -6,7 +6,7 @@ function AdminMessage() {
   });
   const userRequests = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Message", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Message", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -21,7 +21,7 @@ function AdminMessage() {
   userRequests();
   const deleteMessage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Delete", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Delete", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ function AdminMessage() {
     }
   };
   const deleteItem = async (table, message) => {
-    const res = await fetch(`/Message/Delete`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Message/Delete`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const SearchPage = () => {
   const [searchData, setSearchData] = useState([]);
   const handleSearch = async () => {
     if (search) {
-      const res = await fetch(`/home/search`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/home/search`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,7 +23,7 @@ const SearchPage = () => {
   let daata = [];
   Object.assign(daata, searchData);
   const handleAdd = async (index) => {
-    const res = await fetch(`/Home/Menu`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Menu`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

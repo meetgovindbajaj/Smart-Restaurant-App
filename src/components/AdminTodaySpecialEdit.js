@@ -21,7 +21,7 @@ const AdminTodaySpecialEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/AdminTodaySpecialEdit", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/AdminTodaySpecialEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const AdminTodaySpecialEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/AdminTodaySpecialEdit/Delete`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminTodaySpecialEdit/Delete`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

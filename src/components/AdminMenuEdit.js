@@ -23,7 +23,7 @@ const AdminMenuEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/AdminMenuEdit", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/AdminMenuEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const AdminMenuEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/AdminMenuEdit/Delete`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminMenuEdit/Delete`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

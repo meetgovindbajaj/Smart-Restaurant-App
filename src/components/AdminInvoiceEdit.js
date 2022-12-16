@@ -30,7 +30,7 @@ const AdminInvoiceEdit = (props) => {
   const [userData, setUserData] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch(`/invoiceinfo`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/invoiceinfo`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const AdminInvoiceEdit = (props) => {
   }
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("https://royalmadrasiserver/adminMenuspecial", {
+      const res1 = await fetch("https://royalmadrasiserver.vercel.app/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -273,7 +273,7 @@ const AdminInvoiceEdit = (props) => {
                         disco = formValues[i];
                       }
                     }
-                    const res = await fetch(`/AdminDiscount`, {
+                    const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminDiscount`, {
                       method: "POST",
                       headers: {
                         "Content-Type": "application/json",
@@ -341,7 +341,7 @@ const AdminInvoiceEdit = (props) => {
                             showCancelButton: true,
                           });
                           if (quantity !== "") {
-                            const res = await fetch(`/AdminInvoiceEdit`, {
+                            const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminInvoiceEdit`, {
                               method: "POST",
                               headers: {
                                 "Content-Type": "application/json",

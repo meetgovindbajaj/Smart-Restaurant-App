@@ -22,7 +22,7 @@ const AdminInfo = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/AdminInfo", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/AdminInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const AdminInfo = () => {
                       },
                     });
                     if (cTable) {
-                      const res = await fetch(`/AdminInfoDel`, {
+                      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminInfoDel`, {
                         method: "POST",
                         headers: {
                           "Content-Type": "application/json",

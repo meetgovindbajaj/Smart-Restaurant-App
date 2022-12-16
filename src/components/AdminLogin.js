@@ -34,7 +34,7 @@ const AdminLogin = () => {
       },
     });
     if (cTable) {
-      const res = await fetch("https://royalmadrasiserver/Adminlogin", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Adminlogin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -21,7 +21,7 @@ export default function Home() {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/getdata", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/getdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export default function Home() {
   };
   callAboutPage();
   const sendMessage = async (table, message) => {
-    const res = await fetch("https://royalmadrasiserver/Message", {
+    const res = await fetch("https://royalmadrasiserver.vercel.app/Message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

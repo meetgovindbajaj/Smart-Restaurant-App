@@ -24,7 +24,7 @@ const Cart = ({ title, price, quantity, img }) => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Home/Cart", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Home/Cart", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const Cart = ({ title, price, quantity, img }) => {
   let daata = [];
   Object.assign(daata, userData.cart);
   const sendMessage = async (table, message) => {
-    const res = await fetch("https://royalmadrasiserver/Message", {
+    const res = await fetch("https://royalmadrasiserver.vercel.app/Message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const Cart = ({ title, price, quantity, img }) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`/Home/Cart`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Cart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

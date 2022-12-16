@@ -19,7 +19,7 @@ export default function OuetrTodaySpecial() {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/TodaySpecial", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

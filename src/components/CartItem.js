@@ -12,7 +12,7 @@ const CartItem = ({ title, price, img, quantity }) => {
     quantity: quantity,
   });
   const handleadd = async () => {
-    const res = await fetch(`/Home/Cart/Add`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Cart/Add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const CartItem = ({ title, price, img, quantity }) => {
     }
   };
   const handlesub = async () => {
-    const res = await fetch(`/Home/Cart/Sub`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Cart/Sub`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const CartItem = ({ title, price, img, quantity }) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/Home/Cart/Delete`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Cart/Delete`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

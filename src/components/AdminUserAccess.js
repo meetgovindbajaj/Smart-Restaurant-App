@@ -32,7 +32,7 @@ const AdminUserAccess = () => {
   const [todayData, setTodayData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/AdminUserAccess", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/AdminUserAccess", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const AdminUserAccess = () => {
   callAboutPage();
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("https://royalmadrasiserver/adminMenuspecial", {
+      const res1 = await fetch("https://royalmadrasiserver.vercel.app/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -273,7 +273,7 @@ const AdminUserAccess = () => {
           }
         }
       }
-      const res = await fetch(`/AdminUserAccess`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminUserAccess`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -319,7 +319,7 @@ const AdminUserAccess = () => {
   };
   const del = async (table, item, price, quantity) => {
     if (quantity > 1) {
-      const res = await fetch(`/delItem`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/delItem`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -338,7 +338,7 @@ const AdminUserAccess = () => {
     }
   };
   const add = async (table, item, price, quantity) => {
-    const res = await fetch(`/addItem`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/addItem`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -364,7 +364,7 @@ const AdminUserAccess = () => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`/deleteItem`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/deleteItem`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -426,7 +426,7 @@ const AdminUserAccess = () => {
                             content: "input",
                           });
                           if (cTable) {
-                            const res = await fetch(`/swap`, {
+                            const res = await fetch(`https://royalmadrasiserver.vercel.app/swap`, {
                               method: "POST",
                               headers: {
                                 "Content-Type": "application/json",
@@ -608,7 +608,7 @@ const AdminUserAccess = () => {
             content: "input",
           });
           if (cTable) {
-            const res = await fetch("https://royalmadrasiserver/Register1", {
+            const res = await fetch("https://royalmadrasiserver.vercel.app/Register1", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

@@ -23,7 +23,7 @@ export default function Menu() {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Menu", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Menu", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export default function Menu() {
   let daata = [];
   Object.assign(daata, userData);
   const handleAdd = async (index) => {
-    const res = await fetch(`/Home/Menu`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Menu`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

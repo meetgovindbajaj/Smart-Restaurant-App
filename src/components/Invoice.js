@@ -20,7 +20,7 @@ const Invoice = () => {
   let total = 0;
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Home/Invoice", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Home/Invoice", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

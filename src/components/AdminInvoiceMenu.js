@@ -25,7 +25,7 @@ const AdminInvoiceMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`/AdminInvoiceAdd`, {
+      const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminInvoiceAdd`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

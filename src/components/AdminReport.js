@@ -40,13 +40,13 @@ const AdminReport = () => {
   const [userData1, setUserData1] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/Menu", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/Menu", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },credentials: 'include'
       });
-      const res1 = await fetch("https://royalmadrasiserver/TodaySpecial", {
+      const res1 = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -22,7 +22,7 @@ export default function TodaySpecial() {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://royalmadrasiserver/TodaySpecial", {
+      const res = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function TodaySpecial() {
   Object.assign(daata, userData);
 
   const handleAdd = async (index) => {
-    const res = await fetch(`/Home/Menu`, {
+    const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Menu`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
