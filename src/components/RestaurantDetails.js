@@ -26,7 +26,7 @@ const RestaurantDetails = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/restroInfo", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -148,7 +148,7 @@ const RestaurantDetails = () => {
 
         const res = await fetch(`https://royalmadrasiserver.vercel.app/restroInfoEdit`, {
           method: "POST",
-          headers: {
+          headers: {"Origin":"https://royalmadrasi.vercel.app/",
             "Content-Type": "application/json",
           },
           body: JSON.stringify({

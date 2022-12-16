@@ -14,7 +14,7 @@ const AdminDashboard = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Admingetdata", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         credentials: 'include'
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
       if (deleteFile) {
         const res = await fetch("https://royalmadrasiserver.vercel.app/Adminlogout", {
           method: "GET",
-          headers: {
+          headers: {"Origin":"https://royalmadrasi.vercel.app/",
             "Content-Type": "application/json",
           },credentials: 'include'
         });

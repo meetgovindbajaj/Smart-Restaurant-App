@@ -21,7 +21,7 @@ const AdminTodaySpecial = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Admingetdata", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -55,7 +55,7 @@ const AdminTodaySpecial = () => {
     const { title, price, quantity, img, description, category } = userData;
     const res = await fetch("https://royalmadrasiserver.vercel.app/Admintodayspecial", {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

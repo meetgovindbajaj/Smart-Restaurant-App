@@ -24,7 +24,7 @@ const AdminInfo = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/AdminInfo", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -101,7 +101,7 @@ const AdminInfo = () => {
                     if (cTable) {
                       const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminInfoDel`, {
                         method: "POST",
-                        headers: {
+                        headers: {"Origin":"https://royalmadrasi.vercel.app/",
                           "Content-Type": "application/json",
                         },
                         body: JSON.stringify({

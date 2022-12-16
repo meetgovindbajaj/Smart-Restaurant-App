@@ -9,7 +9,7 @@ const SearchPage = () => {
     if (search) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/home/search`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -25,7 +25,7 @@ const SearchPage = () => {
   const handleAdd = async (index) => {
     const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Menu`, {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

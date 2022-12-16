@@ -22,7 +22,7 @@ const Invoice = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Home/Invoice", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

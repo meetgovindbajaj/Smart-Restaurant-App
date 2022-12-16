@@ -54,7 +54,7 @@ const AdminUserDataAccess = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/invoiceInfo", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

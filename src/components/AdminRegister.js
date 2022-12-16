@@ -25,7 +25,7 @@ const AdminRegister = () => {
     const { name, email, phone, password, cpassword } = user;
     const res = await fetch("https://royalmadrasiserver.vercel.app/Adminregister", {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

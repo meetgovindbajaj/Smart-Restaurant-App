@@ -49,7 +49,7 @@ const PrintPage2 = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/restroInfo", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

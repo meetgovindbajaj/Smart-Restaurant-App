@@ -42,13 +42,13 @@ const AdminReport = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Menu", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
       const res1 = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

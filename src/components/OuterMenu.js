@@ -20,7 +20,7 @@ export default function OuetrMenu() {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Menu", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

@@ -36,7 +36,7 @@ const AdminLogin = () => {
     if (cTable) {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Adminlogin", {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

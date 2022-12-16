@@ -21,7 +21,7 @@ export default function OuetrTodaySpecial() {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });

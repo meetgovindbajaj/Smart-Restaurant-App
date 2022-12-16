@@ -25,7 +25,7 @@ const AdminMenuEdit = (title) => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/AdminMenuEdit", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -58,7 +58,7 @@ const AdminMenuEdit = (title) => {
     if (deleteFile) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminMenuEdit/Delete`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

@@ -26,7 +26,7 @@ const Cart = ({ title, price, quantity, img }) => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/Home/Cart", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -52,7 +52,7 @@ const Cart = ({ title, price, quantity, img }) => {
   const sendMessage = async (table, message) => {
     const res = await fetch("https://royalmadrasiserver.vercel.app/Message", {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -73,7 +73,7 @@ const Cart = ({ title, price, quantity, img }) => {
     if (addFile) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Cart`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

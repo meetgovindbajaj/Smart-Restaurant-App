@@ -24,7 +24,7 @@ export default function TodaySpecial() {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/TodaySpecial", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -49,7 +49,7 @@ export default function TodaySpecial() {
   const handleAdd = async (index) => {
     const res = await fetch(`https://royalmadrasiserver.vercel.app/Home/Menu`, {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

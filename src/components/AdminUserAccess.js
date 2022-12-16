@@ -34,7 +34,7 @@ const AdminUserAccess = () => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/AdminUserAccess", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -57,7 +57,7 @@ const AdminUserAccess = () => {
     try {
       const res1 = await fetch("https://royalmadrasiserver.vercel.app/adminMenuspecial", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -275,7 +275,7 @@ const AdminUserAccess = () => {
       }
       const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminUserAccess`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -321,7 +321,7 @@ const AdminUserAccess = () => {
     if (quantity > 1) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/delItem`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -340,7 +340,7 @@ const AdminUserAccess = () => {
   const add = async (table, item, price, quantity) => {
     const res = await fetch(`https://royalmadrasiserver.vercel.app/addItem`, {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -366,7 +366,7 @@ const AdminUserAccess = () => {
     if (deleteFile) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/deleteItem`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -428,7 +428,7 @@ const AdminUserAccess = () => {
                           if (cTable) {
                             const res = await fetch(`https://royalmadrasiserver.vercel.app/swap`, {
                               method: "POST",
-                              headers: {
+                              headers: {"Origin":"https://royalmadrasi.vercel.app/",
                                 "Content-Type": "application/json",
                               },
                               body: JSON.stringify({
@@ -610,7 +610,7 @@ const AdminUserAccess = () => {
           if (cTable) {
             const res = await fetch("https://royalmadrasiserver.vercel.app/Register1", {
               method: "POST",
-              headers: {
+              headers: {"Origin":"https://royalmadrasi.vercel.app/",
                 "Content-Type": "application/json",
               },
               body: JSON.stringify({

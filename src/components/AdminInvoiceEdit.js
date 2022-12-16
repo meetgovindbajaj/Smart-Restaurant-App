@@ -32,7 +32,7 @@ const AdminInvoiceEdit = (props) => {
     try {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/invoiceinfo`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -92,7 +92,7 @@ const AdminInvoiceEdit = (props) => {
     try {
       const res1 = await fetch("https://royalmadrasiserver.vercel.app/adminMenuspecial", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -275,7 +275,7 @@ const AdminInvoiceEdit = (props) => {
                     }
                     const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminDiscount`, {
                       method: "POST",
-                      headers: {
+                      headers: {"Origin":"https://royalmadrasi.vercel.app/",
                         "Content-Type": "application/json",
                       },
                       body: JSON.stringify({
@@ -343,7 +343,7 @@ const AdminInvoiceEdit = (props) => {
                           if (quantity !== "") {
                             const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminInvoiceEdit`, {
                               method: "POST",
-                              headers: {
+                              headers: {"Origin":"https://royalmadrasi.vercel.app/",
                                 "Content-Type": "application/json",
                               },
                               body: JSON.stringify({

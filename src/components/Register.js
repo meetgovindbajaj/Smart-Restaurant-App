@@ -23,7 +23,7 @@ const Register = () => {
     const { table, name, phone } = user;
     const res = await fetch("https://royalmadrasiserver.vercel.app/Register", {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

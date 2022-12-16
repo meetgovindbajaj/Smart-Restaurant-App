@@ -23,7 +23,7 @@ export default function Home() {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/getdata", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -45,7 +45,7 @@ export default function Home() {
   const sendMessage = async (table, message) => {
     const res = await fetch("https://royalmadrasiserver.vercel.app/Message", {
       method: "POST",
-      headers: {
+      headers: {"Origin":"https://royalmadrasi.vercel.app/",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

@@ -23,7 +23,7 @@ const AdminTodaySpecialEdit = (title) => {
     try {
       const res = await fetch("https://royalmadrasiserver.vercel.app/AdminTodaySpecialEdit", {
         method: "GET",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },credentials: 'include'
       });
@@ -75,7 +75,7 @@ const AdminTodaySpecialEdit = (title) => {
     if (deleteFile) {
       const res = await fetch(`https://royalmadrasiserver.vercel.app/AdminTodaySpecialEdit/Delete`, {
         method: "POST",
-        headers: {
+        headers: {"Origin":"https://royalmadrasi.vercel.app/",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
