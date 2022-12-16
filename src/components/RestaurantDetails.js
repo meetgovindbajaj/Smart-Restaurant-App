@@ -24,7 +24,7 @@ const RestaurantDetails = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/restroInfo", {
+      const res = await fetch("https://royalmadrasiserver/restroInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

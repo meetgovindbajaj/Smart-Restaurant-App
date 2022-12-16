@@ -22,7 +22,7 @@ const AdminInfo = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminInfo", {
+      const res = await fetch("https://royalmadrasiserver/AdminInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

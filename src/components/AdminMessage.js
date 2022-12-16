@@ -6,7 +6,7 @@ function AdminMessage() {
   });
   const userRequests = async () => {
     try {
-      const res = await fetch("/Message", {
+      const res = await fetch("https://royalmadrasiserver/Message", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -21,7 +21,7 @@ function AdminMessage() {
   userRequests();
   const deleteMessage = async () => {
     try {
-      const res = await fetch("/Delete", {
+      const res = await fetch("https://royalmadrasiserver/Delete", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

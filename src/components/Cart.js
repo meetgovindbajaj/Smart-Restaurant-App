@@ -24,7 +24,7 @@ const Cart = ({ title, price, quantity, img }) => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Home/Cart", {
+      const res = await fetch("https://royalmadrasiserver/Home/Cart", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const Cart = ({ title, price, quantity, img }) => {
   let daata = [];
   Object.assign(daata, userData.cart);
   const sendMessage = async (table, message) => {
-    const res = await fetch("/Message", {
+    const res = await fetch("https://royalmadrasiserver/Message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

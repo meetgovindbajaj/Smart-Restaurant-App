@@ -40,13 +40,13 @@ const AdminReport = () => {
   const [userData1, setUserData1] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch("/Menu", {
+      const res = await fetch("https://royalmadrasiserver/Menu", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
       });
-      const res1 = await fetch("/TodaySpecial", {
+      const res1 = await fetch("https://royalmadrasiserver/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

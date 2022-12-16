@@ -18,7 +18,7 @@ export default function OuetrMenu() {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Menu", {
+      const res = await fetch("https://royalmadrasiserver/Menu", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

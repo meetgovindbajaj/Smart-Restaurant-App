@@ -34,7 +34,7 @@ const AdminLogin = () => {
       },
     });
     if (cTable) {
-      const res = await fetch("/Adminlogin", {
+      const res = await fetch("https://royalmadrasiserver/Adminlogin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

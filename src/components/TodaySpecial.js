@@ -22,7 +22,7 @@ export default function TodaySpecial() {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/TodaySpecial", {
+      const res = await fetch("https://royalmadrasiserver/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

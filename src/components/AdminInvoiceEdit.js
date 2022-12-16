@@ -90,7 +90,7 @@ const AdminInvoiceEdit = (props) => {
   }
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("/adminMenuspecial", {
+      const res1 = await fetch("https://royalmadrasiserver/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

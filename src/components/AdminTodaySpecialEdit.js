@@ -21,7 +21,7 @@ const AdminTodaySpecialEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminTodaySpecialEdit", {
+      const res = await fetch("https://royalmadrasiserver/AdminTodaySpecialEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

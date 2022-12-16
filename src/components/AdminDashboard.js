@@ -12,7 +12,7 @@ const AdminDashboard = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/Admingetdata", {
+      const res = await fetch("https://royalmadrasiserver/Admingetdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const AdminDashboard = () => {
         dangerMode: true,
       });
       if (deleteFile) {
-        const res = await fetch("/Adminlogout", {
+        const res = await fetch("https://royalmadrasiserver/Adminlogout", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

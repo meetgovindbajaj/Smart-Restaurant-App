@@ -32,7 +32,7 @@ const AdminUserAccess = () => {
   const [todayData, setTodayData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminUserAccess", {
+      const res = await fetch("https://royalmadrasiserver/AdminUserAccess", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const AdminUserAccess = () => {
   callAboutPage();
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("/adminMenuspecial", {
+      const res1 = await fetch("https://royalmadrasiserver/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -608,7 +608,7 @@ const AdminUserAccess = () => {
             content: "input",
           });
           if (cTable) {
-            const res = await fetch("/Register1", {
+            const res = await fetch("https://royalmadrasiserver/Register1", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

@@ -52,7 +52,7 @@ const AdminUserDataAccess = () => {
   const [userData, setUserData] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch("/invoiceInfo", {
+      const res = await fetch("https://royalmadrasiserver/invoiceInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

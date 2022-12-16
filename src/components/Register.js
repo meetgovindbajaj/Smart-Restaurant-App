@@ -21,7 +21,7 @@ const Register = () => {
   const PostData = async (e) => {
     e.preventDefault();
     const { table, name, phone } = user;
-    const res = await fetch("/Register", {
+    const res = await fetch("https://royalmadrasiserver/Register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

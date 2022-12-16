@@ -23,7 +23,7 @@ const AdminMenuEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("/AdminMenuEdit", {
+      const res = await fetch("https://royalmadrasiserver/AdminMenuEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
