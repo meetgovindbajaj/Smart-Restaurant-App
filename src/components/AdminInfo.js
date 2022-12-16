@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+// ADMIN ACOUNT INFO MODULE
+import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import "bootstrap/dist/css/bootstrap.css";
@@ -7,9 +8,7 @@ import swal from "sweetalert";
 import { useLocation } from "react-router-dom";
 let loader = true;
 const AdminInfo = () => {
-  
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -23,7 +22,7 @@ const AdminInfo = () => {
   const [userData, setuserData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/AdminInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -32,7 +31,7 @@ const AdminInfo = () => {
       const data = await res.json();
       setuserData(data);
       if (!res.status === 200) {
-        history.push("//* link */");
+        history.push("/Adminlogin");
         const error = new Error(res.error);
         throw error;
       } else {
@@ -40,7 +39,7 @@ const AdminInfo = () => {
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
-      history.push("//* link */");
+      history.push("/Adminlogin");
       console.log(err);
     }
   };
@@ -69,10 +68,19 @@ const AdminInfo = () => {
         {dataa.map((i) => {
           return (
             <div className="admin-info-page-box">
-              <div className="admin-info-page-inside" style={{ textTransform:"capitalize" }}><span>Username:</span> <pre> </pre>{" ",i.name}</div>
-              <div className="admin-info-page-inside"><span>Email:</span><pre> </pre> {i.email}</div>
+              <div
+                className="admin-info-page-inside"
+                style={{ textTransform: "capitalize" }}
+              >
+                <span>Username:</span> <pre> </pre>
+                {i.name}
+              </div>
+              <div className="admin-info-page-inside">
+                <span>Email:</span>
+                <pre> </pre> {i.email}
+              </div>
               <button
-              className="admin-info-page-btn"
+                className="admin-info-page-btn"
                 onClick={async () => {
                   const addFile = await swal({
                     title: "Are you sure?",
@@ -86,7 +94,7 @@ const AdminInfo = () => {
                         element: "input",
                         attributes: {
                           type: "text",
-                          id:"swal",
+                          id: "swal",
                         },
                       },
                     });
@@ -119,7 +127,12 @@ const AdminInfo = () => {
                   }
                 }}
               >
-                <img height={20} width={20} src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/>
+                <img
+                  height={20}
+                  width={20}
+                  src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
+                  alt=""
+                />
               </button>
             </div>
           );

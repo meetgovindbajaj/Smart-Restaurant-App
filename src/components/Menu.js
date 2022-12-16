@@ -1,3 +1,4 @@
+// USER MENU MODULE
 import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
@@ -9,7 +10,6 @@ let loader = true;
 let timer = null;
 export default function Menu() {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -68,9 +68,11 @@ export default function Menu() {
       toast.warning("Item already in cart");
     } else {
       clearTimeout(timer);
-      document.getElementById("order-view-cart").style.bottom = "0";
+      let element = document.getElementById("order-view-cart");
+      element.style.bottom = "0";
       timer = setTimeout(() => {
-        document.getElementById("order-view-cart").style.bottom = "-10vh";
+        let elemen = document.getElementById("order-view-cart");
+        elemen.style.bottom = "-10vh";
       }, 15000);
       toast.success("item added to cart!");
     }
@@ -155,7 +157,6 @@ export default function Menu() {
                             src={currItem.img}
                             alt="jsx-a11y/alt-text"
                             className="menu-image"
-                            // onClick={handleClick}
                           />
                           <button
                             className="menu-image-button"

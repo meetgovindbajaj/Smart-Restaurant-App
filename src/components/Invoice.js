@@ -1,16 +1,16 @@
+// USER INVOICE MODULE
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import "./css/app.css";
-import {useLocation} from 'react-router-dom'
-let loader=true;
+import { useLocation } from "react-router-dom";
+let loader = true;
 const Invoice = () => {
-  let location=useLocation();
-  // console.log(location.state.loader);
-  if(location.state){
-    if(location.state.loader){
-      loader=true;
-      location.state.loader=false;
+  let location = useLocation();
+  if (location.state) {
+    if (location.state.loader) {
+      loader = true;
+      location.state.loader = false;
     }
   }
   const history = useHistory();
@@ -32,7 +32,7 @@ const Invoice = () => {
         const error = new Error(res.error);
         throw error;
       } else {
-        loader=false;
+        loader = false;
         dispatch({ type: "USER", payload: true });
       }
     } catch (err) {
@@ -76,10 +76,14 @@ const Invoice = () => {
       }
     }
   }
-  return (loader?<div
-    className="menu-body-1"
-    style={{ position: "relative", background: "black" }}
-    ><div class="loader"></div></div>:
+  return loader ? (
+    <div
+      className="menu-body-1"
+      style={{ position: "relative", background: "black" }}
+    >
+      <div class="loader"></div>
+    </div>
+  ) : (
     <>
       {daata1[0] ? (
         <>

@@ -1,8 +1,9 @@
+// ADMIN MENU MODULE
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import swal from "sweetalert";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 let tt;
 export function tab(tables) {
@@ -30,7 +31,7 @@ const AdminUserMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`//* link */`, {
+      const res = await fetch(`/AdminUserItemAdd`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +91,7 @@ const AdminUserMenu = (props) => {
                 {i}
               </h3>
               <div className="menu-container">
-                {user.map((currItem, index) => {
+                {user?.map((currItem, index) => {
                   if (i === currItem.category) {
                     return (
                       <div className="menu-box-1">
@@ -145,6 +146,8 @@ const AdminUserMenu = (props) => {
                         </p>
                       </div>
                     );
+                  } else {
+                    return <></>;
                   }
                 })}
                 <button

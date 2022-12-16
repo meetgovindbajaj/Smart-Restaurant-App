@@ -1,15 +1,12 @@
-import React, { useState, useContext, useEffect, useRef } from "react";
+// ADMIN ADD SPECIAL ITEM 1 MODULE
+import React, { useState, useEffect } from "react";
 // eslint-disable-next-line
 import { ToastContainer, toast } from "react-toastify";
-import { NavLink, useHistory } from "react-router-dom";
-import { UserContext } from "../App";
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
 import Swal from "sweetalert2";
-import { Dropdown } from "react-bootstrap";
-import AdminUserMenu from "./AdminUserMenu";
-import { tab } from "./AdminUserMenu";
 import { useLocation } from "react-router-dom";
 import AdminInvoiceMenu from "./AdminInvoiceMenu";
 let loader = true;
@@ -19,7 +16,6 @@ let disc = false;
 const AdminInvoiceEdit = (props) => {
   let i = {};
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     loader = true;
     location.state.loader = false;
@@ -34,7 +30,7 @@ const AdminInvoiceEdit = (props) => {
   const [userData, setUserData] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch(`//* link */`, {
+      const res = await fetch(`/invoiceinfo`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,8 +51,6 @@ const AdminInvoiceEdit = (props) => {
       console.log(err);
     }
   };
-
-  //   useEffect(() => {
   getData();
   // eslint-disable-next-line
   //   }, []);
@@ -96,7 +90,7 @@ const AdminInvoiceEdit = (props) => {
   }
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("//* link */", {
+      const res1 = await fetch("/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -240,7 +234,8 @@ const AdminInvoiceEdit = (props) => {
             </div>
             <div className="col-1 c2">
               <img
-              className="c2-but"
+                alt=""
+                className="c2-but"
                 onClick={async () => {
                   let name = "",
                     phone = null,
@@ -333,6 +328,7 @@ const AdminInvoiceEdit = (props) => {
                     <div className="col-2 c2">{j.quantity}</div>
                     <div className="col-1 c2">
                       <img
+                        alt=""
                         className="c2-but"
                         onClick={async () => {
                           const quantity = await swal("ENTER QUANTITY", {

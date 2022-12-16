@@ -1,3 +1,4 @@
+// ADMIN ADD MENU ITEM MODULE
 import React, { useEffect, useState, useContext } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
@@ -6,17 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
 import { Dropdown } from "react-bootstrap";
-// import {useLocation} from 'react-router-dom'
-// let loader=true;
 const AdminHome = () => {
-  // let location=useLocation();
-  // // console.log(location.state.loader);
-  // if(location.state){
-  //   if(location.state.loader){
-  //     loader=true;
-  //     location.state.loader=false;
-  //   }
-  // }
   const history = useHistory();
   // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
@@ -32,7 +23,7 @@ const AdminHome = () => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Admingetdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +36,6 @@ const AdminHome = () => {
         const error = new Error(res.error);
         throw error;
       } else {
-        // loader=false;
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
@@ -54,7 +44,7 @@ const AdminHome = () => {
   };
   const getMenu = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/AdminMenuEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -85,7 +75,7 @@ const AdminHome = () => {
   const contactForm = async (e) => {
     e.preventDefault();
     const { title, price, quantity, img, description, category } = userData;
-    const res = await fetch("//* link */", {
+    const res = await fetch("/Adminhome", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -239,8 +229,8 @@ const AdminHome = () => {
                         let name = "category";
                         let value = dat;
                         setuserData({ ...userData, [name]: value });
-                        document.getElementById("category").innerHTML=dat;
-                        document.getElementById("category").value=dat
+                        document.getElementById("category").innerHTML = dat;
+                        document.getElementById("category").value = dat;
                       }}
                     >
                       {dat}

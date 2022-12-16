@@ -1,3 +1,4 @@
+// USER SPECIAL MENU MODULE
 import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
@@ -5,10 +6,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "../components/css/app.css";
 import { useLocation } from "react-router-dom";
 let loader = true;
-let timer=null;
+let timer = null;
 export default function TodaySpecial() {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -68,7 +68,7 @@ export default function TodaySpecial() {
     } else {
       clearTimeout(timer);
       document.getElementById("order-view-cart").style.bottom = "0";
-      timer=setTimeout(() => {
+      timer = setTimeout(() => {
         document.getElementById("order-view-cart").style.bottom = "-10vh";
       }, 15000);
       toast.success("item added to cart!");
@@ -111,7 +111,6 @@ export default function TodaySpecial() {
                   src={currItem.img}
                   alt="jsx-a11y/alt-text"
                   className="menu-image"
-                  // onClick={handleClick}
                 />
                 <button
                   className="menu-image-button"

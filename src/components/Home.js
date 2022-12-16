@@ -1,3 +1,4 @@
+// USER DASHBOARD MODULE
 import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
@@ -8,7 +9,6 @@ import { useLocation } from "react-router-dom";
 let loader = true;
 export default function Home() {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -16,7 +16,6 @@ export default function Home() {
     }
   }
   const history = useHistory();
-  // console.log(history.location.pathname);
   // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
   const [userData, setuserData] = useState({});
@@ -71,6 +70,7 @@ export default function Home() {
 
   return (
     <>
+      {loader ? <></> : <></>}
       <section className="Home-body">
         <div className="home-table">table no. {userData.table}</div>
         <main className="home-main">

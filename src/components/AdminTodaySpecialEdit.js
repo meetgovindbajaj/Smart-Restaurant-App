@@ -4,15 +4,14 @@ import { UserContext } from "../App";
 import { ToastContainer, toast } from "react-toastify";
 import "../components/css/app.css";
 import swal from "sweetalert";
-import {useLocation} from 'react-router-dom'
-let loader=true;
+import { useLocation } from "react-router-dom";
+let loader = true;
 const AdminTodaySpecialEdit = (title) => {
-  let location=useLocation();
-  // console.log(location.state.loader);
-  if(location.state){
-    if(location.state.loader){
-      loader=true;
-      location.state.loader=false;
+  let location = useLocation();
+  if (location.state) {
+    if (location.state.loader) {
+      loader = true;
+      location.state.loader = false;
     }
   }
   const history = useHistory();
@@ -22,7 +21,7 @@ const AdminTodaySpecialEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/AdminTodaySpecialEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -30,8 +29,8 @@ const AdminTodaySpecialEdit = (title) => {
       });
       const data = await res.json();
       setuserData(data);
-      if(data){
-        loader=false;
+      if (data) {
+        loader = false;
       }
       if (!res.status === 200) {
         const error = new Error(res.error);
@@ -40,7 +39,7 @@ const AdminTodaySpecialEdit = (title) => {
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
-      history.push("//* link */");
+      history.push("/AdminRegister");
       console.log(err);
     }
   };
@@ -74,7 +73,7 @@ const AdminTodaySpecialEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`//* link */`, {
+      const res = await fetch(`/AdminTodaySpecialEdit/Delete`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -95,10 +94,14 @@ const AdminTodaySpecialEdit = (title) => {
       swal("Your Item is safe!");
     }
   };
-  return (loader?<div
-    className="menu-body-1"
-    style={{ position: "relative", background: "black" }}
-    ><div class="loader"></div></div>:
+  return loader ? (
+    <div
+      className="menu-body-1"
+      style={{ position: "relative", background: "black" }}
+    >
+      <div class="loader"></div>
+    </div>
+  ) : (
     <div className="menu-body">
       <div className="menu-container" style={{ minHeight: "78vh" }}>
         {daata.map((currItem, index) => {

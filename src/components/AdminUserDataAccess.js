@@ -1,34 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import moment from "moment";
-let loader = true;
-let reve = true;
-let todaydata = false;
-let weekdata = false;
-let monthdata = false;
-let yeardata = false;
-let lastweekdata = false;
-let lastmonthdata = false;
-let lastyeardata = false;
-let tabrev = false;
-let netrev = false;
-let nettabrev = false;
-let nettabrev1 = false;
-let toggler = true;
-let outcount = 100000;
-let allData = true;
-let ItemSalesItemSort = true;
-let ItemSalesQuantitySort = false;
-let ItemSalesItemRevSort = false;
-let ItemSalesQuantityRevSort = false;
-let ItemSalesAmountSort = false;
-let ItemSalesAmountRevSort = false;
-let ItemSalesRateSort = false;
-let ItemSalesRateRevSort = false;
-let ItemSalesDisSort = false;
-let ItemSalesDisRevSort = false;
+let loader = true,
+  reve = true,
+  todaydata = false,
+  weekdata = false,
+  monthdata = false,
+  yeardata = false,
+  lastweekdata = false,
+  lastmonthdata = false,
+  lastyeardata = false,
+  tabrev = false,
+  netrev = false,
+  nettabrev = false,
+  nettabrev1 = false,
+  toggler = true,
+  outcount = 100000,
+  allData = true,
+  ItemSalesItemSort = true,
+  ItemSalesQuantitySort = false,
+  ItemSalesItemRevSort = false,
+  ItemSalesQuantityRevSort = false,
+  ItemSalesAmountSort = false,
+  ItemSalesAmountRevSort = false,
+  ItemSalesRateSort = false,
+  ItemSalesRateRevSort = false,
+  ItemSalesDisSort = false,
+  ItemSalesDisRevSort = false;
 const AdminUserDataAccess = () => {
   const c = new Date();
   function convertTZ(date, tzString) {
@@ -52,14 +52,14 @@ const AdminUserDataAccess = () => {
   const [userData, setUserData] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/invoiceInfo", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
       });
       const data = await res.json();
-      setUserData(data[0]);
+      setUserData(data);
       loader = false;
     } catch (err) {
       console.log(err);
@@ -774,6 +774,7 @@ const AdminUserDataAccess = () => {
               <img
                 height={15}
                 width={15}
+                alt=""
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
             </div>
@@ -793,6 +794,7 @@ const AdminUserDataAccess = () => {
               <img
                 height={15}
                 width={15}
+                alt=""
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
             </div>
@@ -810,6 +812,7 @@ const AdminUserDataAccess = () => {
               <img
                 height={15}
                 width={15}
+                alt=""
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
             </div>
@@ -838,13 +841,11 @@ const AdminUserDataAccess = () => {
                 let t = i.total + cg + sg - dis;
                 t = Math.floor(t * 100) / 100;
                 t = t.toFixed(2);
-                //time 24=>12
                 let a = [];
                 a = i.time.split(":");
                 let t1 = a[0] % 12;
                 let tx = a[0] > 12 ? "PM" : "AM";
                 let n = `${t1 < 10 ? "0" + t1 : t1}:${a[1]} ${tx}`;
-                // console.log(i);
                 return (
                   <div
                     className="row row2"
@@ -885,6 +886,7 @@ const AdminUserDataAccess = () => {
                         <img
                           width={25}
                           height={25}
+                          alt=""
                           src="https://img.icons8.com/color/48/000000/print.png"
                         />
                       </NavLink>
@@ -898,6 +900,7 @@ const AdminUserDataAccess = () => {
                         <img
                           height={20}
                           width={20}
+                          alt=""
                           style={{ marginLeft: "5px" }}
                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA8ElEQVRIie2SvW3DMBBG3ylawLNwACcTpA5ck00WSGUrSJUmrYTTFp5AHoCjBJlAoBsTASQqYCQ2AfJV/H0PPB789UgJiLXWisgR2IUQznVdP7dt+wVQb4U75xrgFOci8jSOYwAOANVWwUIeuVVntcBauwdQ1QZ4nWx/AmG1wDnXiMhwK09K8hYHd2vgfNf83hgj3vvBez8YYwS4qOpHPP+rLpp+aEwI4b3v+5fUnWzBEjymqqqHruuG2XoJONCk4JDxghy4qk67KE+wFf6joAR8UVAKnhSUhM8EpeEwb9Oi8JSgKDxXsBqeI9gE/09Wru9NZvVHWi5aAAAAAElFTkSuQmCC"
                         />{" "}
@@ -942,6 +945,7 @@ const AdminUserDataAccess = () => {
               <header>Items</header>
               <img
                 height={15}
+                alt=""
                 width={15}
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
@@ -965,6 +969,7 @@ const AdminUserDataAccess = () => {
               <header>quantity</header>
               <img
                 height={15}
+                alt=""
                 width={15}
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
@@ -988,6 +993,7 @@ const AdminUserDataAccess = () => {
               <header>Rate</header>
               <img
                 height={15}
+                alt=""
                 width={15}
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
@@ -1011,6 +1017,7 @@ const AdminUserDataAccess = () => {
               <header>Discount</header>
               <img
                 height={15}
+                alt=""
                 width={15}
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"
               />
@@ -1033,6 +1040,7 @@ const AdminUserDataAccess = () => {
             >
               <header>Amount</header>
               <img
+                alt=""
                 height={15}
                 width={15}
                 src="https://img.icons8.com/ios-glyphs/30/000000/sort.png"

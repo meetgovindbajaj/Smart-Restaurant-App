@@ -1,12 +1,14 @@
-import React, { useState, useContext, useEffect } from "react";
+// ADMIN PRINT MODULE 2
+import React, { useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import "./css/app.css";
 
 let trigger = false;
 const PrintPage1 = () => {
   const history = useHistory();
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
   // eslint-disable-next-line
   const [userData, setuserData] = useState({});
@@ -16,7 +18,6 @@ const PrintPage1 = () => {
   if (location.state) {
     table = location.state.table;
     items = location.state.items;
-    // console.log(location.list, a, quantity, item);
   }
 
   const callAboutPage = async () => {
@@ -64,29 +65,30 @@ const PrintPage1 = () => {
           flexDirection: "column",
           textAlign: "center",
           overflow: "hidden",
-          paddingBottom:"15px"
+          paddingBottom: "15px",
         }}
       >
-        {/* <div>||OM||</div> */}
-        <div style={{fontWeight:"bolder" }}>{dataa[0].title}</div>
+        <div style={{ fontWeight: "bolder" }}>{dataa[0].title}</div>
         <div>
           {"("}
           {dataa[0].category}
           {")"}
         </div>
-        {/* <div>{dataa[0].address}</div>
-        <div>GST NO.: {dataa[0].gst}</div> */}
         <div style={{ borderBottom: "1px solid black" }}>{dataa[0].phone}</div>
         <div
           style={{
             borderBottom: "1px solid black",
-            borderTop: "1px bolid black",fontWeight:"bold" 
+            borderTop: "1px bolid black",
+            fontWeight: "bold",
           }}
         >
           Table- {table}
         </div>
         <div>
-          <div className="row" style={{ borderBottom: "1px solid black",fontWeight:"bold" }}>
+          <div
+            className="row"
+            style={{ borderBottom: "1px solid black", fontWeight: "bold" }}
+          >
             <div className="col-8" style={{ textAlign: "start" }}>
               Description
             </div>

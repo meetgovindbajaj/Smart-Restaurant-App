@@ -5,17 +5,7 @@ import { useHistory } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
-// import {useLocation} from 'react-router-dom'
-// let loader=true;
 const AdminTodaySpecial = () => {
-  // let location=useLocation();
-  // // console.log(location.state.loader);
-  // if(location.state){
-  //   if(location.state.loader){
-  //     // loader=true;
-  //     location.state.loader=false;
-  //   }
-  // }
   const history = useHistory();
   // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
@@ -29,7 +19,7 @@ const AdminTodaySpecial = () => {
   });
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Admingetdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +53,7 @@ const AdminTodaySpecial = () => {
     e.preventDefault();
     // eslint-disable-next-line
     const { title, price, quantity, img, description, category } = userData;
-    const res = await fetch("//* link */", {
+    const res = await fetch("/Admintodayspecial", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,10 +61,10 @@ const AdminTodaySpecial = () => {
       body: JSON.stringify({
         title,
         price,
-        quantity:1,
+        quantity: 1,
         img,
         description,
-        category:"special",
+        category: "special",
       }),
     });
 
@@ -118,8 +108,9 @@ const AdminTodaySpecial = () => {
               name="title"
               onChange={handleInputs}
               required
-            /></div>
-            <div className="admin-menu-add-options">
+            />
+          </div>
+          <div className="admin-menu-add-options">
             <input
               type="Number"
               id="contact_form_email"
@@ -128,8 +119,9 @@ const AdminTodaySpecial = () => {
               name="price"
               onChange={handleInputs}
               required
-            /></div>
-            <div className="admin-menu-add-options">
+            />
+          </div>
+          <div className="admin-menu-add-options">
             <input
               type="Number"
               id="contact_form_phone"
@@ -142,8 +134,9 @@ const AdminTodaySpecial = () => {
               min={1}
               onChange={handleInputs}
               required
-            /></div>
-            <div className="admin-menu-add-options">
+            />
+          </div>
+          <div className="admin-menu-add-options">
             <input
               type="url"
               id="img"
@@ -152,8 +145,9 @@ const AdminTodaySpecial = () => {
               name="img"
               onChange={handleInputs}
               required
-            /></div>
-            <div className="admin-menu-add-options">
+            />
+          </div>
+          <div className="admin-menu-add-options">
             <input
               type="text"
               id="category"
@@ -164,8 +158,9 @@ const AdminTodaySpecial = () => {
               value={"special"}
               onChange={handleInputs}
               required
-            /></div>
-            <div className="admin-menu-add-options-text">
+            />
+          </div>
+          <div className="admin-menu-add-options-text">
             <textarea
               className="admin-menu-add-input-text "
               id="desc"
@@ -177,7 +172,6 @@ const AdminTodaySpecial = () => {
               onChange={handleInputs}
               required
             />
-            
           </div>
           <div className="admin-menu-add-options">
             <button

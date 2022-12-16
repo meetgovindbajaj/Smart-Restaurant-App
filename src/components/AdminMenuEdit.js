@@ -1,3 +1,4 @@
+// Delete from menu
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { UserContext } from "../App";
@@ -5,15 +6,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "../components/css/app.css";
 import swal from "sweetalert";
 import { Dropdown } from "react-bootstrap";
-import {useLocation} from 'react-router-dom'
-let loader=true;
+import { useLocation } from "react-router-dom";
+let loader = true;
 const AdminMenuEdit = (title) => {
-  let location=useLocation();
-  // console.log(location.state.loader);
-  if(location.state){
-    if(location.state.loader){
-      loader=true;
-      location.state.loader=false;
+  let location = useLocation();
+  if (location.state) {
+    if (location.state.loader) {
+      loader = true;
+      location.state.loader = false;
     }
   }
   const history = useHistory();
@@ -23,7 +23,7 @@ const AdminMenuEdit = (title) => {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/AdminMenuEdit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const AdminMenuEdit = (title) => {
         const error = new Error(res.error);
         throw error;
       } else {
-        loader=false;
+        loader = false;
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
@@ -56,7 +56,7 @@ const AdminMenuEdit = (title) => {
       dangerMode: true,
     });
     if (deleteFile) {
-      const res = await fetch(`//* link */`, {
+      const res = await fetch(`/AdminMenuEdit/Delete`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -112,10 +112,14 @@ const AdminMenuEdit = (title) => {
     }
   });
 
-  return (loader?<div
-    className="menu-body-1"
-    style={{ position: "relative", background: "black" }}
-    ><div class="loader"></div></div>:
+  return loader ? (
+    <div
+      className="menu-body-1"
+      style={{ position: "relative", background: "black" }}
+    >
+      <div class="loader"></div>
+    </div>
+  ) : (
     <div
       className="menu-body"
       style={{ position: "relative", background: "black" }}
@@ -153,24 +157,7 @@ const AdminMenuEdit = (title) => {
                 {daata.map((currItem, index) => {
                   if (i === currItem.category) {
                     return (
-                      <div
-                        className="menu-box-1"
-                      >
-                        {/* <div className="menu-image-container">
-                          <img
-                            loading="lazy"
-                            src={currItem.img}
-                            alt="jsx-a11y/alt-text"
-                            className="menu-image"
-                            // onClick={handleClick}
-                          />
-                          <button
-                            className="menu-image-button"
-                            onClick={() => handleAdd(index)}
-                          >
-                            ADD TO CART
-                          </button>
-                        </div> */}
+                      <div className="menu-box-1">
                         <p className="menu-box-body">
                           <div className="menu-box-title">
                             <h5
@@ -180,12 +167,6 @@ const AdminMenuEdit = (title) => {
                               {currItem.title}
                             </h5>
                           </div>
-                          {/* <div
-                            className="container-fluid menu-box-description"
-                            style={{ color: "silver" }}
-                          >
-                            {currItem.description}
-                          </div> */}
                           <h5 className="menu-box-price">
                             Price:
                             <span

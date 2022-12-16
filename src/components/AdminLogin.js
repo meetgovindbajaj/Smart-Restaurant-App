@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
 
 const AdminLogin = () => {
-  
   // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
   const history = useHistory();
@@ -30,12 +29,12 @@ const AdminLogin = () => {
         element: "input",
         attributes: {
           type: "password",
-          id:"swal",
+          id: "swal",
         },
       },
     });
     if (cTable) {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Adminlogin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +42,7 @@ const AdminLogin = () => {
         body: JSON.stringify({
           email,
           password,
-          key:Number(cTable),
+          key: Number(cTable),
         }),
       });
 
@@ -66,7 +65,7 @@ const AdminLogin = () => {
       <NavLink
         className="menu-back"
         to={{
-          pathname: "//* link */",
+          pathname: "/menu",
           state: { loader: true },
         }}
       >
@@ -111,9 +110,6 @@ const AdminLogin = () => {
               onClick={PostData}
             />
           </div>
-          {/* <NavLink to="/adminRegister" className="admin-login-page-link">
-            New to Website? Create an account.
-          </NavLink> */}
         </form>
       </div>
       <ToastContainer

@@ -1,3 +1,4 @@
+// USER CART MODULE 1
 import React, { useState, useContext } from "react";
 import { useHistory, NavLink } from "react-router-dom";
 import { UserContext } from "../App";
@@ -10,7 +11,6 @@ let loader = true;
 let timer = null;
 const Cart = ({ title, price, quantity, img }) => {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -94,7 +94,6 @@ const Cart = ({ title, price, quantity, img }) => {
         swal("Ordered Successfully", {
           icon: "success",
         });
-        // history.push("/home/menu");
       }
     } else {
       swal("Order Canceled!");

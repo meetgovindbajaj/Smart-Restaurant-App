@@ -1,16 +1,16 @@
+// OUTER MENU MODULE
 import React, { useState, useContext } from "react";
 import { UserContext } from "../App";
 import "../components/css/app.css";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
-let loader=true;
+let loader = true;
 export default function OuetrTodaySpecial() {
-  let location=useLocation();
-  // console.log(location.state.loader);
-  if(location.state){
-    if(location.state.loader){
-      loader=true;
-      location.state.loader=false;
+  let location = useLocation();
+  if (location.state) {
+    if (location.state.loader) {
+      loader = true;
+      location.state.loader = false;
     }
   }
   // eslint-disable-next-line
@@ -31,7 +31,7 @@ export default function OuetrTodaySpecial() {
         const error = new Error(res.error);
         throw error;
       } else {
-        loader=false;
+        loader = false;
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
@@ -58,10 +58,14 @@ export default function OuetrTodaySpecial() {
     };
   }
   daata.sort(dynamicSort("title"));
-  return (loader?<div
-    className="menu-body-1"
-    style={{ position: "relative", background: "black" }}
-    ><div class="loader"></div></div>:
+  return loader ? (
+    <div
+      className="menu-body-1"
+      style={{ position: "relative", background: "black" }}
+    >
+      <div class="loader"></div>
+    </div>
+  ) : (
     <>
       <div className="menu-container">
         {daata.map((currItem) => {

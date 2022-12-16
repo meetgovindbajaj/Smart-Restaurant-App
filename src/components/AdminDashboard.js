@@ -1,3 +1,4 @@
+//ADMIN DASHBOARD MODULE
 import React, { useState, useContext } from "react";
 import { NavLink, useHistory, Link } from "react-router-dom";
 import { UserContext } from "../App";
@@ -5,26 +6,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import "react-toastify/dist/ReactToastify.css";
 import AdminMessage from "./AdminMessage";
 import swal from "sweetalert";
-// import { useLocation } from "react-router-dom";
-// let loader = true;
 const AdminDashboard = () => {
-  // let location = useLocation();
-  // // console.log(location.state.loader);
-  // if (location.state) {
-  //   if (location.state.loader) {
-  //     loader = true;
-  //     location.state.loader = false;
-  //   }
-  // }
   const history = useHistory();
-  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
-  // eslint-disable-next-line
   const [userData, setuserData] = useState({});
-
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Admingetdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +21,7 @@ const AdminDashboard = () => {
       const data = await res.json();
       setuserData(data);
       if (!res.status === 200) {
-        history.push("//* link */");
+        history.push("/Adminlogin");
         const error = new Error(res.error);
         throw error;
       } else {
@@ -41,14 +29,11 @@ const AdminDashboard = () => {
         dispatch({ type: "ADMIN", payload: true });
       }
     } catch (err) {
-      history.push("//* link */");
+      history.push("/Adminlogin");
       console.log(err);
     }
   };
-  // useEffect(() => {
   callAboutPage();
-  // eslint-disable-next-line
-  // }, []);
   const logout = async () => {
     try {
       const deleteFile = await swal({
@@ -59,8 +44,7 @@ const AdminDashboard = () => {
         dangerMode: true,
       });
       if (deleteFile) {
-        // eslint-disable-next-line
-        const res = await fetch("//* link */", {
+        const res = await fetch("/Adminlogout", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -70,7 +54,6 @@ const AdminDashboard = () => {
           icon: "success",
         });
         dispatch({ type: "ADMIN", payload: false });
-        // history.push("/adminlogin", { replace: true });
       }
     } catch (err) {
       console.log(err);

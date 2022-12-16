@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import PrintPage from "./PrintPage";
-let list = [];
 function AdminMessage() {
   const [mess, setMess] = useState({
     Messages: [],
   });
   const userRequests = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Message", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +33,7 @@ function AdminMessage() {
     }
   };
   const deleteItem = async (table, message) => {
-    const res = await fetch(`//* link */`, {
+    const res = await fetch(`/Message/Delete`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,13 +58,13 @@ function AdminMessage() {
             <div className="message-container">
               <p className="message row">
                 <div
-                title={message.message}
+                  title={message.message}
                   className="col-10"
                   style={{
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
-                    cursor:"pointer"
+                    cursor: "pointer",
                   }}
                 >
                   <input
@@ -84,6 +82,7 @@ function AdminMessage() {
                     }}
                   >
                     <img
+                      alt=""
                       width={15}
                       height={15}
                       src="https://img.icons8.com/ios-glyphs/50/000000/print.png"

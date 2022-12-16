@@ -1,5 +1,6 @@
+// USER REGISTER PAGE MODULE
 import React, { useState } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./css/app.css";
@@ -42,15 +43,6 @@ const Register = () => {
   };
   return (
     <>
-      <NavLink
-        className="menu-back"
-        to={{
-          pathname: "/menu",
-          state: { loader: true },
-        }}
-      >
-        - menu page
-      </NavLink>
       <div className="register-container">
         <form method="POST" className="register-form-box" id="register-form">
           <div className="register-form-options">

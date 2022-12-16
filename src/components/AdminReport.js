@@ -30,7 +30,6 @@ ChartJS.register(
 let loader = true;
 const AdminReport = () => {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -41,13 +40,13 @@ const AdminReport = () => {
   const [userData1, setUserData1] = useState({});
   const getData = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/Menu", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
       });
-      const res1 = await fetch("//* link */", {
+      const res1 = await fetch("/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -392,47 +391,6 @@ const AdminReport = () => {
     total = Number(total) + Number(obj.revenue);
   });
 
-  // const todayData = {
-  //   labels: todayItemArr,
-  //   datasets: [
-  //     {
-  //       label: "# of Votes",
-  //       data: todayQuantityArr,
-  //       backgroundColor: generateColors(todayItemArr),
-  //     },
-  //   ],
-  // };
-  // const monthlyData = {
-  //   labels: monthlyItemArr,
-  //   datasets: [
-  //     {
-  //       label: "# of Votes",
-  //       data: monthlyQuantityArr,
-  //       backgroundColor: generateColors(monthlyItemArr),
-  //     },
-  //   ],
-  // };
-  // const yearlyData = {
-  //   labels: yearlyItemArr,
-  //   datasets: [
-  //     {
-  //       label: "# of Votes",
-  //       data: yearlyQuantityArr,
-  //       backgroundColor: generateColors(yearlyMonthArr),
-  //     },
-  //   ],
-  // };
-  // const allYearData = {
-  //   labels: allYearNameArr,
-  //   datasets: [
-  //     {
-  //       label: "# of Votes",
-  //       data: allYearQuantityArr,
-  //       backgroundColor: generateColors(allYearNameArr),
-  //     },
-  //   ],
-  // };
-
   return loader ? (
     <div
       className="menu-body-1"
@@ -454,7 +412,6 @@ const AdminReport = () => {
                     label: "No. of Orders",
                     data: todayQuantityArr,
                     backgroundColor: "rgba(0,0,0,.7)",
-                    // borderColor: "black",
                   },
                 ],
               }}
@@ -504,7 +461,6 @@ const AdminReport = () => {
                   {
                     label: "No. of Orders",
                     data: monthlyQuantityArr,
-                    // backgroundColor: "red",
                     backgroundColor: "rgba(0,0,0,.7)",
                   },
                 ],
@@ -555,7 +511,6 @@ const AdminReport = () => {
                   {
                     label: "No. of Orders",
                     data: monthlyQArr,
-                    // backgroundColor: "blue",
                     backgroundColor: "rgba(0,0,0,.7)",
                   },
                 ],
@@ -606,7 +561,6 @@ const AdminReport = () => {
                   {
                     label: "No. of Orders",
                     data: yearlyQuantityArr,
-                    // backgroundColor: "red",
                     backgroundColor: "rgba(0,0,0,.7)",
                   },
                 ],
@@ -657,7 +611,6 @@ const AdminReport = () => {
                   {
                     label: "No. of Orders",
                     data: yearlyQArr,
-                    // backgroundColor: "blue",
                     backgroundColor: "rgba(0,0,0,.7)",
                   },
                 ],
@@ -708,7 +661,6 @@ const AdminReport = () => {
                   {
                     label: "Revenue Generated",
                     data: allYearQuantityArr,
-                    // backgroundColor: "red",
                     backgroundColor: "rgba(0,0,0,.7)",
                   },
                 ],

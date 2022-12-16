@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+// ADMIN RESTAIRANT DETAILS MODULE
+import React, { useState, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 import "bootstrap/dist/css/bootstrap.css";
@@ -6,12 +7,10 @@ import "react-toastify/dist/ReactToastify.css";
 import swal from "sweetalert";
 import Swal from "sweetalert2";
 import { useLocation } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 
 let loader = true;
 const RestaurantDetails = () => {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -70,12 +69,11 @@ const RestaurantDetails = () => {
           element: "input",
           attributes: {
             type: "text",
-            id:"swal"
+            id: "swal",
           },
         },
       });
-      if(cTable==="259700"){
-
+      if (cTable === "259700") {
         const { value: formValues } = await Swal.fire({
           title: "Edit Details",
           width: "90%",
@@ -112,7 +110,7 @@ const RestaurantDetails = () => {
             ];
           },
         });
-  
+
         if (formValues) {
           for (let i = 0; i < formValues.length; i++) {
             if (i === 0) {
@@ -147,7 +145,7 @@ const RestaurantDetails = () => {
             }
           }
         }
-  
+
         const res = await fetch(`/restroInfoEdit`, {
           method: "POST",
           headers: {
@@ -173,7 +171,7 @@ const RestaurantDetails = () => {
           Swal.fire("Saved!", "", "success");
           // history.push("/home/menu");
         }
-      }else{
+      } else {
         swal("Wrong Code", {
           icon: "error",
         });

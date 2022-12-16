@@ -1,3 +1,4 @@
+// ADMIN SPECIAL MENU
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
@@ -24,13 +25,13 @@ const AdminInvoiceMenu = (props) => {
       dangerMode: false,
     });
     if (addFile) {
-      const res = await fetch(`//* link */`, {
+      const res = await fetch(`/AdminInvoiceAdd`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          invoice:props.invoice,
+          invoice: props.invoice,
           items: items,
         }),
       });
@@ -45,7 +46,6 @@ const AdminInvoiceMenu = (props) => {
         swal("Saved Successfully", {
           icon: "success",
         });
-        // history.push("/home/menu");
       }
     } else {
       swal("Canceled!");
@@ -102,16 +102,33 @@ const AdminInvoiceMenu = (props) => {
                           >
                             <button
                               className="cart-btn cart-sub"
-                              style={{background:'red',color:"white",fontSize:"2em" }}
+                              style={{
+                                background: "red",
+                                color: "white",
+                                fontSize: "2em",
+                              }}
                               onClick={() => sub(index)}
                             >
                               -
                             </button>
-                            <div style={{display:"flex",alignItems:"center",justifyContent:"center",padding:".1em 1em"}}>{currItem.quantity - 1}</div>
-                            
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                padding: ".1em 1em",
+                              }}
+                            >
+                              {currItem.quantity - 1}
+                            </div>
+
                             <button
                               className="cart-btn cart-add"
-                              style={{background:'green',color:"white",fontSize:"2em"  }}
+                              style={{
+                                background: "green",
+                                color: "white",
+                                fontSize: "2em",
+                              }}
                               onClick={() => add(index)}
                             >
                               +

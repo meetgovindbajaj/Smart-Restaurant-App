@@ -1,3 +1,4 @@
+// Reports
 import React, { useState, useContext, useEffect, useRef } from "react";
 // eslint-disable-next-line
 import { ToastContainer, toast } from "react-toastify";
@@ -15,7 +16,6 @@ let xx;
 let loader = true;
 const AdminUserAccess = () => {
   let location = useLocation();
-  // console.log(location.state.loader);
   if (location.state) {
     if (location.state.loader) {
       loader = true;
@@ -32,7 +32,7 @@ const AdminUserAccess = () => {
   const [todayData, setTodayData] = useState({});
   const callAboutPage = async () => {
     try {
-      const res = await fetch("//* link */", {
+      const res = await fetch("/AdminUserAccess", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const AdminUserAccess = () => {
       setuserData(data);
       loader = false;
       if (!res.status === 200) {
-        history.push("//* link */");
+        history.push("/Adminlogin");
         const error = new Error(res.error);
         throw error;
       } else {
@@ -55,7 +55,7 @@ const AdminUserAccess = () => {
   callAboutPage();
   const callAboutPage1 = async () => {
     try {
-      const res1 = await fetch("//* link */", {
+      const res1 = await fetch("/adminMenuspecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -318,7 +318,6 @@ const AdminUserAccess = () => {
     }
   };
   const del = async (table, item, price, quantity) => {
-    // console.log(table, item, price, quantity);
     if (quantity > 1) {
       const res = await fetch(`/delItem`, {
         method: "POST",
@@ -339,7 +338,6 @@ const AdminUserAccess = () => {
     }
   };
   const add = async (table, item, price, quantity) => {
-    // console.log(table, item, price, quantity);
     const res = await fetch(`/addItem`, {
       method: "POST",
       headers: {
@@ -385,7 +383,6 @@ const AdminUserAccess = () => {
         swal("Item deleted from table", {
           icon: "success",
         });
-        // setuserData({ title: "", price: "", quantity: "" });
       }
     } else {
       swal("Your Item is safe!");
@@ -447,6 +444,7 @@ const AdminUserAccess = () => {
                         }}
                       >
                         <img
+                          alt=""
                           width={20}
                           height={20}
                           src="https://img.icons8.com/wired/64/000000/replace.png"
@@ -562,6 +560,7 @@ const AdminUserAccess = () => {
                                     }
                                   >
                                     <img
+                                      alt=""
                                       width={22}
                                       height={22}
                                       src="https://img.icons8.com/ios-glyphs/30/fa314a/filled-trash.png"
@@ -625,6 +624,7 @@ const AdminUserAccess = () => {
         }}
       >
         <img
+          alt=""
           width={25}
           height={25}
           color="green"

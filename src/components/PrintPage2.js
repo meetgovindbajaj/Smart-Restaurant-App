@@ -1,10 +1,12 @@
-import React, { useState, useContext, useEffect } from "react";
+// ADMIN PRINT MODULE 3
+import React, { useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { UserContext } from "../App";
 let trigger = false;
 const PrintPage2 = () => {
   const history = useHistory();
+  // eslint-disable-next-line
   const { state, dispatch } = useContext(UserContext);
   // eslint-disable-next-line
   const [userData, setuserData] = useState({});
@@ -34,7 +36,6 @@ const PrintPage2 = () => {
     sgst = Number(location.state.sgst);
     time = location.state.time;
     total = Number(location.state.total);
-    // console.log(location.list, a, quantity, item);
     dis = (Number(discount) / 100) * Number(total).toFixed(2);
     cg = (cgst / 100) * total;
     cg = Number(Math.floor(cg * 100) / 100);

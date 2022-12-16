@@ -1,3 +1,4 @@
+// NAVBAR MODULE
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -533,19 +534,6 @@ const Navigation = (props) => {
               Order Now
             </NavLink>
           </li>
-          {/* <li className="nav-item px-3">
-            <NavLink
-              className="nav-link sudo text-bold"
-              to={{
-                pathname:'/TodaySpecial',
-                state: {loader:true}  
-              }}"/Adminlogin"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-            >
-              Admin Login
-            </NavLink>
-          </li> */}
         </ul>
       );
     } else if (props.link === "special") {
@@ -634,6 +622,19 @@ const Navigation = (props) => {
               Invoice
             </NavLink>
           </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/search",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Search
+            </NavLink>
+          </li>
         </ul>
       );
     } else if (props.link === "homespecial") {
@@ -663,6 +664,89 @@ const Navigation = (props) => {
               data-target=".navbar-collapse.show"
             >
               Menu
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/Cart",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Cart
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/Invoice",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Invoice
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/search",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Search
+            </NavLink>
+          </li>
+        </ul>
+      );
+    } else if (props.link === "search") {
+      return (
+        <ul className="navbar-nav m-auto">
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/home",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/Menu",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Menu
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/TodaySpecial",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Today's Special
             </NavLink>
           </li>
           <li className="nav-item px-3">
@@ -748,6 +832,19 @@ const Navigation = (props) => {
               Invoice
             </NavLink>
           </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/search",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Search
+            </NavLink>
+          </li>
         </ul>
       );
     } else if (props.link === "invoice") {
@@ -803,6 +900,50 @@ const Navigation = (props) => {
               data-target=".navbar-collapse.show"
             >
               Cart
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Home/search",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Search
+            </NavLink>
+          </li>
+        </ul>
+      );
+    } else if (props.link === "userRegister") {
+      return (
+        <ul className="navbar-nav m-auto">
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/Menu",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Menu
+            </NavLink>
+          </li>
+          <li className="nav-item px-3">
+            <NavLink
+              className="nav-link sudo text-bold"
+              to={{
+                pathname: "/TodaySpecial",
+                state: { loader: true },
+              }}
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              Today's Special
             </NavLink>
           </li>
         </ul>
