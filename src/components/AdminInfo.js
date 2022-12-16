@@ -26,7 +26,7 @@ const AdminInfo = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -107,7 +107,7 @@ const AdminInfo = () => {
                         body: JSON.stringify({
                           email: i.email,
                           code: Number(cTable),
-                        }),
+                        }),credentials: 'include'
                       });
                       const data1 = await res.json();
                       if (data1.status === 400) {

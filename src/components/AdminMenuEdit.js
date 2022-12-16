@@ -27,7 +27,7 @@ const AdminMenuEdit = (title) => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -63,7 +63,7 @@ const AdminMenuEdit = (title) => {
         },
         body: JSON.stringify({
           title: title,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {

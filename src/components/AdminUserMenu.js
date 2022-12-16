@@ -39,7 +39,7 @@ const AdminUserMenu = (props) => {
         body: JSON.stringify({
           table: tt,
           items: items,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {

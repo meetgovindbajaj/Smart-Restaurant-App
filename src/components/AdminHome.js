@@ -27,7 +27,7 @@ const AdminHome = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -48,7 +48,7 @@ const AdminHome = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setMenuData(data);
@@ -79,7 +79,7 @@ const AdminHome = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-      },
+      },credentials: 'include',
       body: JSON.stringify({
         title,
         price,

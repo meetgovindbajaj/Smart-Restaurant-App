@@ -21,7 +21,7 @@ const CartItem = ({ title, price, img, quantity }) => {
         title: userData.title,
         price: userData.price,
         quantity: userData.quantity,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.quantity > userData.quantity) {
@@ -45,7 +45,7 @@ const CartItem = ({ title, price, img, quantity }) => {
         title: userData.title,
         price: userData.price,
         quantity: userData.quantity,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.quantity < userData.quantity) {
@@ -76,7 +76,7 @@ const CartItem = ({ title, price, img, quantity }) => {
         body: JSON.stringify({
           title,
           price,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {

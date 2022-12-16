@@ -26,7 +26,7 @@ export default function TodaySpecial() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -57,7 +57,7 @@ export default function TodaySpecial() {
         price: daata[index].price,
         img: daata[index].img,
         quantity: daata[index].quantity,
-      }),
+      }),credentials: 'include'
     });
 
     const data = await res.json();

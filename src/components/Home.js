@@ -25,7 +25,7 @@ export default function Home() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -51,7 +51,7 @@ export default function Home() {
       body: JSON.stringify({
         table,
         message,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.status === 422 || !data) {

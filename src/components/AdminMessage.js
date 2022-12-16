@@ -10,7 +10,7 @@ function AdminMessage() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setMess({ Messages: data });
@@ -25,7 +25,7 @@ function AdminMessage() {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       await res.json();
     } catch (err) {
@@ -41,7 +41,7 @@ function AdminMessage() {
       body: JSON.stringify({
         table,
         message,
-      }),
+      }),credentials: 'include'
     });
     await res.json();
     document.getElementById("mssgDel").checked = false;

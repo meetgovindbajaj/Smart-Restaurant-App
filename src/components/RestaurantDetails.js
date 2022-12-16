@@ -28,7 +28,7 @@ const RestaurantDetails = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -162,7 +162,7 @@ const RestaurantDetails = () => {
             cgst,
             sgst,
             discount,
-          }),
+          }),credentials: 'include'
         });
         const data = await res.json();
         if (data.status === 400) {

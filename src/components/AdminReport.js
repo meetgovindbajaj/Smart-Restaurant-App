@@ -44,13 +44,13 @@ const AdminReport = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const res1 = await fetch("https://royalmadrasiserver/TodaySpecial", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       const data1 = await res1.json();

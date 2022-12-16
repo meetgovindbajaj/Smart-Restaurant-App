@@ -36,7 +36,7 @@ const AdminUserAccess = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -59,7 +59,7 @@ const AdminUserAccess = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data1 = await res1.json();
       setMenuData(data1[0]);
@@ -285,7 +285,7 @@ const AdminUserAccess = () => {
           discount: discount,
           name: name,
           phone: phone,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       // console.log(data);
@@ -329,7 +329,7 @@ const AdminUserAccess = () => {
           title: item,
           price,
           quantity: Number(quantity),
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {
@@ -348,7 +348,7 @@ const AdminUserAccess = () => {
         title: item,
         price,
         quantity: Number(quantity),
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.status === 400) {
@@ -374,7 +374,7 @@ const AdminUserAccess = () => {
           title,
           price,
           quantity,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {
@@ -434,7 +434,7 @@ const AdminUserAccess = () => {
                               body: JSON.stringify({
                                 table: data.table,
                                 newTable: Number(cTable),
-                              }),
+                              }),credentials: 'include'
                             });
                             const data1 = await res.json();
                             if (data1.status === 400) {
@@ -617,7 +617,7 @@ const AdminUserAccess = () => {
                 table: Number(cTable),
                 name: "",
                 phone: "",
-              }),
+              }),credentials: 'include'
             });
             await res.json();
           }

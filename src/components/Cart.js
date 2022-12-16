@@ -28,7 +28,7 @@ const Cart = ({ title, price, quantity, img }) => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -58,7 +58,7 @@ const Cart = ({ title, price, quantity, img }) => {
       body: JSON.stringify({
         table,
         message,
-      }),
+      }),credentials: 'include'
     });
     // eslint-disable-next-line
     const data = await res.json();
@@ -78,7 +78,7 @@ const Cart = ({ title, price, quantity, img }) => {
         },
         body: JSON.stringify({
           items,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       sendMessage(userData.table, items);

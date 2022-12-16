@@ -30,7 +30,7 @@ const Register = () => {
         table,
         name,
         phone,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.status === 422 || !data) {

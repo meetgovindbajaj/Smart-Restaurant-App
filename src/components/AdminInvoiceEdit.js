@@ -37,7 +37,7 @@ const AdminInvoiceEdit = (props) => {
         },
         body: JSON.stringify({
           invoId: disc ? i.invoiceNumber : x[1],
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 201) {
@@ -94,7 +94,7 @@ const AdminInvoiceEdit = (props) => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data1 = await res1.json();
       setMenuData(data1[0]);
@@ -283,7 +283,7 @@ const AdminInvoiceEdit = (props) => {
                         name: name,
                         phone: phone,
                         discount: disco,
-                      }),
+                      }),credentials: 'include'
                     });
                     await res.json();
                   }
@@ -350,7 +350,7 @@ const AdminInvoiceEdit = (props) => {
                                 invoice: dataa.invoiceNumber,
                                 item: j.item,
                                 quantity: Number(quantity),
-                              }),
+                              }),credentials: 'include'
                             });
                             const data = await res.json();
                             if (data.status === 401) {

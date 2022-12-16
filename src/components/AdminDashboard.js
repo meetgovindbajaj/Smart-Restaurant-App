@@ -17,6 +17,7 @@ const AdminDashboard = () => {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -48,7 +49,7 @@ const AdminDashboard = () => {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-          },
+          },credentials: 'include'
         });
         swal("User Logged out", {
           icon: "success",

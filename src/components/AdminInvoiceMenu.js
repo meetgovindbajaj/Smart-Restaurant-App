@@ -33,7 +33,7 @@ const AdminInvoiceMenu = (props) => {
         body: JSON.stringify({
           invoice: props.invoice,
           items: items,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       if (data.status === 400) {

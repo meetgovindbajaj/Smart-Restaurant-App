@@ -23,7 +23,7 @@ const AdminTodaySpecial = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-        },
+        },credentials: 'include'
       });
       const data = await res.json();
       setuserData(data);
@@ -65,7 +65,7 @@ const AdminTodaySpecial = () => {
         img,
         description,
         category: "special",
-      }),
+      }),credentials: 'include'
     });
 
     const data = await res.json();

@@ -14,7 +14,7 @@ const SearchPage = () => {
         },
         body: JSON.stringify({
           search,
-        }),
+        }),credentials: 'include'
       });
       const data = await res.json();
       setSearchData(data.data);
@@ -33,7 +33,7 @@ const SearchPage = () => {
         price: daata[index].price,
         img: daata[index].img,
         quantity: daata[index].quantity,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.status === 422) {

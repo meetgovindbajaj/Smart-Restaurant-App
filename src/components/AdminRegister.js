@@ -34,7 +34,7 @@ const AdminRegister = () => {
         phone,
         password,
         cpassword,
-      }),
+      }),credentials: 'include'
     });
     const data = await res.json();
     if (data.status === 422 || !data) {
