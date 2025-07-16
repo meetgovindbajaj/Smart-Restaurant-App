@@ -1,5 +1,7 @@
 # [Smart-Restaurant-App](https://royalmadrasi.vercel.app/)
 
+## [server code](https://github.com/meetgovindbajaj/royalmadrasiserver)
+
 ### [Youtube Video](https://youtu.be/lx1wG5Tu6IE)
 
 <div align="center">
